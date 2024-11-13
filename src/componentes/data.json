@@ -1,0 +1,7 @@
+[
+    { "id": 1, "name": "Barranquilla", "pais": "(Colombia)", "abreviatura": "BAQ" },
+    { "id": 2, "name": "Medellín" , "pais": "(Colombia)", "abreviatura": "MDE"},
+    { "id": 3, "name": "Santa Marta",  "pais": "(Colombia)", "abreviatura": "SMR" },
+    { "id": 4, "name": "Bogotá",  "pais": "(Colombia)", "abreviatura": "BOG" },
+    { "id": 5, "name": "Cartagena",  "pais": "(Colombia)", "abreviatura": "CTG" }
+]

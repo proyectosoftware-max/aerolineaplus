@@ -1,0 +1,71 @@
+.custom-card {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 120px;
+}
+
+.CardHeader{
+  height: 55px !important;
+  border-radius: 10px !important;
+  box-shadow: none !important;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  height: 28px;
+ border: none !important;
+}
+
+.accordion-header h5 {
+  margin: 0;
+  margin-left: 50px;
+  font-size: 17px;
+  font-weight: bold;
+
+}
+
+.toggle-button {
+
+  border: none;
+  font-size: 12px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: 0.1s;
+}
+
+.accordion-content {
+  position: absolute;
+  margin-top: 0px;
+  margin-bottom: 100px !important;
+  padding: 20px;
+  border-radius: 15px !important;
+  margin-left: 750px;
+  background-color: white;
+  -webkit-box-shadow: -2px 2px 14px 0px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: -2px 2px 14px 0px rgba(0, 0, 0, 0.29);
+  box-shadow: -2px 2px 14px 0px rgba(0, 0, 0, 0.29);
+  width: 30%;
+}
+
+.div_datos{
+  border: 2px solid rgb(38, 214, 38);
+  border-radius: 30px;
+  width: 95%;
+  margin: 0 auto;
+  height: 150px;
+}

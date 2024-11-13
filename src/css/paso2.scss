@@ -1,0 +1,439 @@
+.paso2 {
+    padding-top: 30px;
+    justify-content: center;
+    margin-bottom: 120px;
+
+}
+
+.textoPasajero{
+    margin-top: 100px !important;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.textoNombreApellido{
+    font-size: 20px;
+
+}
+
+.div_pasajero {
+    width: 90%;
+    background-color: white;
+    margin-top: 30px !important;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 0 auto;
+    display: 'flex';
+    -webkit-box-shadow: 0px 1px 36px -4px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 0px 1px 36px -4px rgba(0, 0, 0, 0.36);
+    box-shadow: 0px 1px 36px -4px rgba(0, 0, 0, 0.36);
+}
+
+.textoReserva{
+    margin-top: 50px !important;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.div_reserva {
+    width: 90%;
+    margin-top: 30px !important;
+    margin-bottom: 20px;
+    padding: 30px;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 1px 36px -4px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 0px 1px 36px -4px rgba(0, 0, 0, 0.36);
+    box-shadow: 0px 1px 36px -4px rgba(0, 0, 0, 0.36);
+}
+
+.div_reservaMovil{
+    display: none;
+}
+
+.div_check{
+    margin-top: 30px !important;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.accordionPasajero {
+    margin-top: 100px !important;
+    width: 80% !important;
+    height: auto;
+}
+
+.div_accordion_paso2 {
+    margin-top: 75px !important;
+    margin-bottom: 390px !important;
+    margin: 0 auto;
+    width: 87%;
+
+}
+
+.textoDatosPersonales {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.label_pasajero {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.label_adulto {
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#outlined-basic {
+    font-size: 25px;
+    width: 200px !important;
+}
+
+.div_check {
+    margin-top: 50px;
+}
+
+.accordionPaso2 {
+
+    margin-bottom: 50px !important;
+    border-bottom: none !important;
+}
+
+.boton_infoContacto {
+    width: 230px;
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 100px;
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+    float: right;
+}
+
+.div_datosPaso2 {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: -70px;
+    z-index: 10;
+}
+
+.div_datosPaso2Scroll {
+    width: 100%;
+    background-color: white;
+    bottom: 0;
+    position: fixed;
+}
+
+.contenedor_datosPaso2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.contenedor_datosPaso2Movil,
+.BoxPaso2Movil {
+    display: none;
+}
+
+.div_fecha {
+
+    width: 22%;
+}
+
+.div_adulto {
+
+    width: 22%;
+}
+
+.div_totalPasajero {
+
+    width: 22%;
+}
+
+.div_boton_continuaPaso2 {
+
+    width: 22%;
+
+}
+
+.p_fecha {
+
+    margin-bottom: -1px;
+}
+
+.label_idasalida {
+
+    margin-right: 5px;
+}
+
+
+.p_idaPaso2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.p_salidaPaso2 {
+    margin-top: -20px;
+    font-size: 14px;
+}
+
+.img_avion {
+    margin-top: -30px;
+}
+
+.p_vueltaPaso2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.label_vueltallegada {
+    margin-left: 5px;
+}
+
+.p_llegadaPaso2 {
+    margin-top: -20px;
+    font-size: 14px;
+}
+
+.div_adulto {
+    text-align: center;
+}
+
+.p_pasajerosPaso2 {
+    margin-left: -20px;
+}
+
+.p_adultoPaso2 {
+    margin-top: -20px;
+    font-size: 23px;
+}
+
+.p_precioPaso2 {
+    margin-top: -20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.label_copPaso2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.p_totalReservaPaso2 {
+    margin-top: -20px;
+    font-size: 13px;
+}
+
+.label_botonPaso2 {}
+
+.boton_continuaPaso2 {
+    width: 250px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: gray;
+    font-weight: bold;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+
+/* Div1 y Div2 posicionados en la parte inferior */
+.div1,
+.div2 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3f51b5;
+    /* Cambia al color deseado */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    /* Transición suave */
+}
+
+
+
+/* Ocultar el div cuando se desplaza */
+.hide {
+    display: none;
+}
+
+/* Mostrar el div cuando se desplaza */
+.show {
+    display: block;
+}
+
+.div_lifeMiles {
+    margin-top: 30px;
+}
+
+.div_asisteciaEspecial {
+    width: 80%;
+    margin-top: 20px;
+}
+
+.label_servicios {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.boton_aisitenciaEspecial {
+    font-size: 18px;
+    border: 1px solid rgb(207, 205, 205);
+    margin: 5px;
+    padding: 10px;
+    cursor: none;
+}
+
+.label_sinCosto {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.signoMas {
+    margin-left: 5px;
+}
+
+.signoEquis {
+    margin-left: 2px;
+}
+
+.PrimerFormEscritorio{
+    display:  block;
+}
+
+.PrimerFormMovil{
+    display: none;
+}
+
+@media screen and (max-width: '1024px') {
+
+
+
+    .div_accordion_paso2 {
+        margin-top: 75px !important;
+        margin-bottom: 390px !important;
+        margin: 0 auto;
+        width: 87%;
+
+
+    }
+
+    .BoxPaso2 {
+        display: none !important;
+    }
+
+    .BoxPaso2Movil {
+        display: block !important;
+    }
+
+    .textoDatosPersonales {
+        font-size: 20px
+    }
+
+    .label_pasajero,
+    .label_adulto {
+        font-size: 17px;
+    }
+
+    .label_NombreApellido {
+        font-size: 13px;
+    }
+
+    .boton_infoContacto {
+        width: 100%;
+        border-radius: 30px;
+        border: none;
+        margin: 0 auto !important;
+        margin-top: 50px !important;
+        font-weight: bold;
+        color: white;
+        padding: 13px;
+        font-size: 17px;
+        float: right;
+    }
+
+    .contenedor_datosPaso2 {
+        display: none;
+    }
+
+    .div_datosPaso2 {
+        margin-bottom: -110px;
+    }
+
+    .div_datosPaso2Scroll {
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .contenedor_datosPaso2Movil {
+        display: inline;
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    .TextorResumenViajeMovil {
+        font-size: 14px;
+        float: left;
+    }
+
+    .label_precioPaso2Movil {
+        font-size: 15px;
+        font-weight: bold;
+        float: right;
+    }
+
+    .label_copPaso2Movil {
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 3px;
+    }
+
+    .TotalReservaMovil {
+        font-weight: normal;
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.726);
+    }
+
+    .PrimerFormEscritorio{
+        display: none;
+    }
+
+    .PrimerFormMovil{
+        display: block;
+    }
+    .div_reserva{
+        display: none;
+    }
+
+    .div_reservaMovil {
+        width: 90%;
+        margin-top: 30px !important;
+        margin-bottom: 20px;
+        padding: 30px;
+        margin: 0 auto;
+        display: block;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 1px 36px -4px rgba(0, 0, 0, 0.36);
+        -moz-box-shadow: 0px 1px 36px -4px rgba(0, 0, 0, 0.36);
+        box-shadow: 0px 1px 36px -4px rgba(0, 0, 0, 0.36);
+    }
+    .div_prefijoTelefono{
+        display: flex;
+    }
+
+}

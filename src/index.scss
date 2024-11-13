@@ -1,0 +1,751 @@
+@import url('./css/navbar.scss');
+@import url('./css/modal.scss');
+@import url('./css/carrusel.scss');
+@import url('./css/radio.scss');
+@import url('./css/accordion.scss');
+@import url('./css/resumen.scss');
+@import url('./css/paso2.scss');
+@import url('./css/paso3.scss');
+@import url('./css/paso4.scss');
+@import url('./css/paso5.scss');
+
+.fondoPaso1 {
+    background-color: white;
+    margin-top: -15px;
+}
+
+.div_contendedorMovil {
+    display: none;
+}
+
+.div_movil {
+    display: none;
+}
+
+.div_accordion {
+    display: block;
+}
+
+.div_accordionEscritorio {
+    display: block;
+    width: 95%;
+    margin: 0px auto !important;
+    margin-top: 20px !important;
+    border: 4px solid orange;
+    border-radius: 20px !important;
+}
+
+.div_accordionMovil, .div_accordionMovilResumen {
+    display: none;
+}
+
+.p_ida {
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    display: block;
+}
+
+.div_ordenar_por {
+    margin-top: 50px;
+}
+
+.label_ordenar_por {
+    margin-left: 55px;
+}
+
+.boton_mejor_precio {
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 20px;
+    width: 150px;
+
+}
+
+.boton_vuelos_directos {
+    background-color: white;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 20px;
+    width: 180px;
+}
+
+.CardEscritorio {
+    display: block;
+}
+
+
+.th {
+    font-weight: bold;
+}
+
+.TypographyparrafoNegrita {
+    font-size: 18px !important;
+    font-weight: bold;
+    margin-left: 50px !important;
+}
+
+.TypographyparrafoPrimero {
+    font-size: 17px !important;
+    position: relative;
+    padding-left: 20px;
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+}
+
+.Typographyparrafo {
+    font-size: 16px !important;
+    position: relative;
+    padding-left: 20px;
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+}
+
+
+
+.tabla1 {
+    width: 60%;
+    border-collapse: collapse;
+    font-size: 17px;
+    justify-content: center;
+    margin: 0 auto;
+    border: none;
+}
+
+.tabla2 {
+    width: 40%;
+    border-collapse: collapse;
+    font-size: 17px;
+    margin: 0 auto;
+    border: none;
+}
+
+.setenta {
+    font-weight: bold;
+}
+
+.div_piePagina {
+    margin-top: 70px;
+    margin-bottom: 120px;
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.label_piePagina1 {
+    float: left;
+    font-size: 15px;
+}
+
+.label_piePagina2 {
+    float: right;
+    font-size: 12px;
+}
+
+.botonCerrar {
+    color: rgb(20, 147, 197);
+    text-decoration: underline;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.botonCerrar:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton-basic {
+    background-color: rgb(226, 17, 17);
+    color: white;
+    margin-left: 215px;
+    width: 70px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.boton-classic {
+    background-color: rgb(204, 51, 140);
+    color: white;
+    margin-left: 215px;
+    width: 70px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.boton-flex {
+    background-color: rgb(247, 123, 8);
+    color: white;
+    margin-left: 215px;
+    width: 70px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+
+.boton-basic-movil {
+    background-color: rgb(226, 17, 17);
+    color: white;
+    margin-left: 50%;
+    width: 20%;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.boton-classic-movil {
+    background-color: rgb(204, 51, 140);
+    color: white;
+    margin-left: 120px;
+    width: 20%;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.boton-flex-movil {
+    background-color: rgb(247, 123, 8);
+    color: white;
+    margin-left: 120px;
+    width: 20%;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.p_idaMovil{
+    display: none;
+}
+
+.div_accordionSemiMovil{
+    display: none !important;
+}
+
+@media screen and (max-width: 632px) {
+    .div_accordionSemiMovil{
+        display: none !important;
+    }
+    
+    
+    .div_accordionMovil {
+        display: block;
+        width: 95%;
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+
+    .p_idaMovil{
+        display: none;
+    }
+   
+}
+
+
+@media screen and (max-width: 1024px) {
+    
+    .p_idaMovil{
+        margin-top: 150px;
+        margin-bottom: -150px;
+    }
+    
+    .fondoPaso1 {
+        margin-top: -15px;
+    }
+
+
+    .div_accordionEscritorio {
+        display: none;
+    }
+    
+    .div_accordion{
+        display: none;
+    }
+
+   
+
+    .div_accordionMovilResumen{
+        display: block;
+        width: 95%;
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+
+    .editarBusqueda{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .accordion {
+        border-radius: 10px !important;
+        height: 100px;
+        -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.21) !important;
+        -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.21) !important;
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.21) !important;
+    }
+
+
+    .p_ida {
+       
+        display: none;
+    }
+
+    .p_idaMenuBar{
+        font-size: 20px;
+        margin-top: 0px;
+        margin-left: 5px;
+    }
+
+    .avion {
+        display: none !important;
+    }
+
+    .letra_ida {
+        display: none;
+    }
+
+    .div_movil {
+        display: flex;
+        width: 100%;
+        margin-top: -10px;
+
+    }
+
+    
+
+    .div_ordenar_por {
+        display: none;
+    }
+
+    .tablaAccordion {
+        display: none !important;
+    }
+
+    .div_contendedorMovil {
+        display: inline;
+
+    }
+
+    .div_contendedorMovil {
+        display: block;
+        padding-top: 10px;
+        width: 100%;
+        height: 70px;
+    }
+
+    .accordionSemiMovil{
+        display: block;
+        border-radius: 10px !important;
+        height: 150px;
+        -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.21) !important;
+        -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.21) !important;
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.21) !important;
+    }
+
+    .div_accordionSemiMovil{
+        display: block;
+        width: 95%;
+        margin-left: 20px;
+        margin-bottom: 15px;    
+    }
+
+    .div_contenedorVuelosSemiMovil{
+        margin-top: 20px;
+        text-align: center;
+       // border: 1px solid blue;
+    }
+
+    .div_contendedorMovilSemiMovil {
+        display: block;
+        padding-top: 10px;
+        width: 100%;
+        height: 100px;
+    }
+
+    .div_subContenedorMovilSemiMovil {
+        width: 100%;
+    }
+
+    .div_trayectoSemiMovilSemiMovil {
+       // border: 1px solid red;
+        text-align: center;
+        margin-top: -30px;
+        width: 99%;
+        position: absolute;
+    }
+
+    .div_subContenedorMovil {
+        width: 100%;
+    }
+
+    .label_directoMovilSemiMovil {
+        margin-right: 5px;
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.548);
+    }
+    .div_origenMovilSemiMovil {
+        margin-top: -10px;
+        float: left;
+    }
+
+    .letra_directoSemiMovil {
+        margin-left: 10px;
+        font-size: 13px;
+        text-decoration: underline;
+        color: rgb(62, 146, 255);
+    }
+
+    .div_origenMovil {
+        float: left;
+    }
+
+    .div_trayectoSemiMovil {
+        margin-top: 27px;
+        width: 100%;
+        position: absolute;
+    }
+
+    .label_trayectoSemiMovil {
+        font-size: 10px;
+        color: rgba(0, 0, 0, 0.541);
+    }
+
+    .label_salidaMovilSemiMovil {
+        display: block;
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .p_codigoOrigenMovilSemiMovil {
+        margin-right: 20px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .div_contenedorDatosVuelosMovilSemiMovil {
+        margin-top: -10px;
+        width: 100%;
+        text-align: center;
+       // border: 1px solid green;
+    }
+
+    .div_destinoMovilSemiMovil {
+        margin-top: -25px;
+        margin-left: 75px;
+        float: right;
+    }
+
+    .label_llegadaMovilSemiMovil {
+        display: block;
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .p_codigoDestinoMovilSemiMovil {
+        margin-left: 2px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .div_valorPasajeMovilSemiMovil {
+        text-align: center;
+        width: 100%;
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: -20px;
+        margin-right: 10px;
+       // border: 1px solid red;
+    }
+
+    .desdeSemiMovil{
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 40px;
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+    .label_valorPasajeMovilSemiMovil {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 13px;
+        font-weight: bold;
+        margin-left: 50px;
+        margin-right: 5px;
+    }
+
+
+
+
+    .div_trayecto {
+        margin-top: 27px;
+        width: 100%;
+        position: absolute;
+    }
+
+    .label_trayecto {
+        font-size: 10px;
+        color: rgba(0, 0, 0, 0.541);
+    }
+
+    .div_destinoMovil {
+        margin-top: -25px;
+        margin-left: 75px;
+    }
+
+    .p_salida {
+        display: none;
+    }
+
+    .p_salidaMovil {
+        display: block;
+        font-size: 13px;
+    }
+
+    .p_origenDestinoMovil {
+        display: block;
+        margin-top: -20px;
+        font-size: 20px;
+        font-weight: bold;
+        width: 100%;
+
+    }
+
+    .label_a_movil {
+        display: inline;
+        font-size: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-weight: bold;
+    }
+
+    .label_salidaMovil {
+        display: block;
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .p_codigoOrigenMovil {
+        margin-right: 20px;
+        font-size: 20px;
+        display: none;
+    }
+
+    .div_contenedorDatosVuelosMovil {
+        margin-top: -10px;
+        width: 70%;
+    }
+
+    .label_directoMovil {
+        margin-right: 5px;
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.548);
+    }
+
+    .codigoAvionMovil {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 11px;
+        color: rgba(0, 0, 0, 0.548);
+    }
+
+    .label_barraMovil {
+        font-size: 10px;
+        color: rgba(0, 0, 0, 0.548);
+    }
+
+    .label_detallesVueloMovil {
+        margin-left: 5px;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.548);
+        cursor: pointer;
+        display: none;
+    }
+
+    .img_rayaAvion {
+        display: none;
+    }
+
+    .label_rayaMovil {
+        display: block;
+        width: 100%;
+        height: 1px;
+        border-top: 1px solid rgba(0, 0, 0, 0.199);
+        margin: 0 auto;
+        margin-left: 2px;
+        margin-top: 1px;
+    }
+
+
+    .p_titulosDetallesMovil {
+        font-size: 30px;
+        width: 500px;
+    }
+
+    .label_origenMovil {
+        font-size: 23px;
+        margin-right: 5px;
+        color: black;
+
+    }
+
+    .label_destinoMovil {
+        font-size: 23px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .label_aMovil {
+        font-size: 23px;
+    }
+
+    .labelBarraMovil {
+        font-size: 23px;
+        margin-right: 5px;
+
+    }
+
+    .labelFechaMovil {
+        font-size: 23px;
+
+    }
+
+    .label_botonDirectoMovil {
+        border-radius: 30px;
+        color: blue;
+        text-align: center;
+        width: 80px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .label_duracionMovil {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .contenedor_popoverAccordionMovil {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-top: 1px solid rgba(0, 0, 0, 0.247);
+
+    }
+
+    .label_llegadaMovil {
+        display: block;
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .p_codigoDestinoMovil {
+        margin-left: 2px;
+        font-size: 20px;
+        display: none;
+    }
+
+    .div_valorPasajeMovil {
+        float: right;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+
+    .label_valorPasajeMovil {
+        margin: 0, ;
+        font-size: 13px;
+        font-weight: bold;
+        margin-right: 5px;
+    }
+
+    .letra_directo {
+        margin-left: 10px;
+        font-size: 13px;
+        text-decoration: underline;
+        color: rgb(62, 146, 255);
+    }
+
+    .origen{
+            text-align: center;
+            font-size: 25px;
+            background-color: black;
+            color: white;
+            margin-top: 0px;
+    }
+    
+    .destino{
+        text-align: center;
+        font-size: 25px;
+        background-color: black;
+        color: white;
+        margin-top: 0px;
+}
+
+    .tituloTarifas {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+        font-size: 17px !important;
+        font-weight: bold !important;
+    }
+
+    .TypographyparrafoNegrita {
+        font-size: 17px !important;
+        font-weight: bold;
+
+    }
+
+    .TypographyparrafoPrimero {
+        font-size: 17px !important;
+        position: relative;
+        padding-left: 20px;
+
+    }
+
+    .Typographyparrafo {
+        font-size: 17px !important;
+        position: relative;
+        padding-left: 0px;
+
+    }
+
+    .div_piePagina {
+        background-color: white;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 100px;
+        width: 100%;
+        padding-top: 5px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .label_piePagina1 {
+        font-size: 13px;
+    }
+
+    .label_piePagina2 {
+        float: left;
+        text-align: center;
+        font-size: 12px;
+        width: 100%;
+    }
+    
+
+}

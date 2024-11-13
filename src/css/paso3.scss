@@ -1,0 +1,605 @@
+.div_Paso3 {
+    margin-top: 100px !important;
+    margin-bottom: 200px !important;
+    margin: 0 auto;
+    width: 100%;
+    height: 0 auto;
+    padding: 30px;
+}
+
+.contenedorPaso3 {
+    margin-top: 100px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 50px;
+    background-color: white;
+    margin-bottom: 20px !important;
+    border-bottom: none !important;
+}
+
+.divPrimerContenedor {
+    display: flex;
+}
+
+.p_segundotitulo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.divSegundoContenedor {
+    display: flex;
+    margin-top: 20px;
+}
+
+.p_primertitulo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.div_equipajeMano {
+    display: flex;
+    background-color: white;
+    width: 50%;
+    height: 170px;
+    border-radius: 25px;
+    -webkit-box-shadow: -2px 2px 14px 0px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: -2px 2px 14px 0px rgba(0, 0, 0, 0.29);
+    box-shadow: -2px 2px 14px 0px rgba(0, 0, 0, 0.29);
+}
+
+.div_equipajeDeportivo {
+    display: flex;
+    background-color: white;
+    width: 50%;
+    height: 170px;
+    margin-left: 30px;
+    border-radius: 25px;
+    -webkit-box-shadow: -2px 2px 14px 0px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: -2px 2px 14px 0px rgba(0, 0, 0, 0.29);
+    box-shadow: -2px 2px 14px 0px rgba(0, 0, 0, 0.29);
+
+}
+
+.contenedorImagen {
+    width: 30%;
+    height: auto;
+    margin-left: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.img_adicionales {
+    border-radius: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.div_contendio {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.div_desdePrecio {
+    margin-top: 30px;
+}
+
+.div_desdePrecioGratis {
+    margin-top: 50px;
+}
+
+.p_cop {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+.p_elije {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.p_texto {
+    margin-top: -15px;
+    font-size: 13px;
+}
+
+.p_desde {
+    margin-bottom: -1px;
+    font-size: 14px;
+}
+
+.p_precioCard {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.p_precioGratis {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.boton_continuarAdicionales {
+    width: 180px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: right;
+}
+
+.accordionBoton{
+ display: none;
+}
+
+
+@media screen and (max-width: '1024px') {
+
+    .contenedor_datosAdicionales,
+    .label_verEditar {
+        display: none;
+    }
+
+    .divPrimerContenedor {
+        display: block;
+    }
+
+    .divSegundoContenedor {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .div_equipajeMano {
+        display: flex;
+        width: 100%;
+        height: 150px;
+        border-radius: 15px;
+        -webkit-box-shadow: -2px 2px 14px 0px rgba(0, 0, 0, 0.29);
+        -moz-box-shadow: -2px 2px 14px 0px rgba(0, 0, 0, 0.29);
+        box-shadow: -2px 2px 14px 0px rgba(0, 0, 0, 0.29);
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+    
+    .div_equipajeDeportivo {
+        display: flex;
+        width: 100%;
+        height: 150px;
+        margin-left: 0px;
+        border-radius: 15px;
+        -webkit-box-shadow: -2px 2px 14px 0px rgba(0, 0, 0, 0.29);
+        -moz-box-shadow: -2px 2px 14px 0px rgba(0, 0, 0, 0.29);
+        box-shadow: -2px 2px 14px 0px rgba(0, 0, 0, 0.29);
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+
+    .contenedorImagen {
+        width: 123px;
+        margin-left: 0px;
+        overflow: hidden;
+    }
+
+    
+    .img_adicionales {
+        border-radius: 20px;
+        border-radius: 5px;
+        margin-left: -15px;
+        width: 123px;
+        height: 160px;
+        text-align: center;
+    }
+
+    .div_contendio {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 2px;
+    }
+
+    .p_elije {
+        font-size: 17px;
+        font-weight: bold;
+    }
+    
+    .p_texto {
+        margin-top: -15px;
+        font-size: 13px;
+    }
+
+    .div_desdePrecio {
+        margin-top: 10px;
+    }
+    
+    .div_desdePrecioGratis {
+        margin-top: 30px;
+    }
+
+    .p_precioCard {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .p_precioGratis {
+        font-size: 17px;
+        font-weight: bold;
+    }
+    
+    .p_cop {
+        font-size: 15px;
+        font-weight: bold;
+        margin-right: 4px;
+    }
+
+    .label_ServiciosAdicionales {
+        font-size: 20px;
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+
+    .p_primertitulo {
+        font-size: 20px;
+    }
+
+    .p_segundotitulo {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    .boton_continuarAdicionales {
+        width: 150px;
+        border-radius: 30px;
+        background-color: black;
+        color: white;
+        margin-top: 50px;
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        float: left;
+
+    }
+
+    .accordionBoton{
+        display: block;
+    }
+
+    .p_datosPersonalesAdicionales {
+        font-size: 20px;
+    }
+
+    .div_accordionAdicionales {
+        margin-top: 100px !important;
+        margin: 0 auto;
+        width: 87%;
+        height: auto;
+        background-color: rgb(235, 235, 235) !important;
+    }
+
+    .accordionAdicionales {
+        margin-top: 100px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 50px;
+        background-color: white;
+        margin-bottom: -450px !important;
+        border-bottom: none !important;
+    }
+
+    .contendorAdicionales {
+        display: block;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    
+    .div_adicionales {
+        background-color: rgb(235, 235, 235);
+        width: 100%;
+        border: 2px solid rgb(235, 235, 235);
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    .div_datosAdicionalesScroll {
+        text-align: center;
+        padding-top: 15px;
+        background-color: transparent;
+    }
+
+    .div_datosAdicionales {
+        text-align: center;
+        height: 100px;
+        margin-top: 500px;
+        background-color: transparent;
+    }
+
+    .contenedor_datosAdicionalesMovil {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        margin-top: 20px;
+        background-color: white;
+    }
+
+    .TextorResumenAdicionalesViajeMovil {
+        font-size: 14px;
+        float: left;
+    }
+
+    .label_precioAdicionalesMovil {
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 40%;
+        width: 80%;
+    }
+
+    .label_copAdicionalesMovil {
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 3px;
+    }
+
+    .TotalReservaMovil {
+        font-weight: normal;
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.726);
+        width: 100%;
+    }
+
+    .boton_continuarAdicionales {
+        display: block;
+        width: 100%;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        background-color: black;
+        color: white;
+        border-radius: 30px;
+        font-weight: bold;
+        float: none;
+    }
+
+    .div_piePaginaAdicionales {
+        display: block;
+        background-color: white;
+        width: 100%;
+        height: 40px;
+        width: 100%;
+        margin-top: 50px;
+        padding-top: 10px;
+        padding-left: 60px;
+        padding-right: 60px;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.616);
+        text-align: center;
+    }
+
+    .label_ceroPaso3{
+        font-size: 17px;
+        color: black;
+    }
+
+
+}
+
+/*<div className="div_reserva">
+                    <div className="div_prefijoTelefono">
+                        <FormControl variant="standard" style={{ marginTop: '-1px', marginRight: '15px', width: '100%' }}>
+
+
+
+                            <InputLabel
+                                id="select-label"
+                                sx={{
+                                    transform: genero ? 'translate(14px, 20px) scale(0.85)' : 'translate(18px, 30px) scale(1.1)',
+                                    color: genero ? 'YellowGreen' : 'black',
+                                    fontWeight: genero ? 'bold' : 'normal',
+                                    '&.Mui-focused': {
+                                        marginBottom: '5px',
+                                        transform: 'translate(14px, 20px) scale(0.85)',
+                                        color: 'YellowGreen',
+                                        fontWeight: 'bold',
+                                    },
+                                    '&:not(.Mui-focused)': {
+                                        color: 'black', // Texto en negro cuando no está enfocado
+                                        fontWeight: 'normal',
+
+                                    },
+                                }}
+                            >
+                                Prefijo*
+                            </InputLabel>
+                            <Select
+                                labelId="select-label"
+                                id="demo-simple-select"
+                                value={prefijo}
+                                onChange={changePrefijo}
+
+                                disableUnderline
+
+                                MenuProps={{
+                                    disableScrollLock: true, // Permite que el scroll de la página continúe
+                                    PaperProps: {
+                                        sx: {
+                                            maxHeight: 100,
+                                            overflow: 'auto',
+                                        },
+                                    },
+                                }}
+
+                                sx={{
+                                    width: '100%',
+                                    fontSize: '15px',
+                                    border: '1px solid rgba(0, 0, 0, 0.527)', // Color del borde inicial
+                                    borderRadius: '4px', // Bordes redondeados
+                                    padding: '6px 6px', // Ajusta el padding del select
+                                    '&:hover': {
+                                        borderColor: 'rgb(9, 197, 9)', // Color del borde al hacer hover
+                                    },
+                                    '&.Mui-focused': {
+                                        borderColor: 'rgb(9, 197, 9)', // Color del borde al hacer focus
+                                        color: 'black',
+                                        fontWeight: 'bold',
+                                    },
+                                    '& .MuiSelect-select': {
+                                        padding: '9px', // Ajusta el padding del select
+                                        fontWeight: 'bold', // Texto en negrita cuando hay contenido
+                                        color: 'black', // Texto en negro cuando tiene contenido
+                                    },
+                                }}
+                            >
+                                {codigosPaises.map((pais, index) => (
+                                    <MenuItem key={index} value={`${pais.nombre} (${pais.código})`}
+
+                                        sx={{
+                                            '&:hover': {
+                                                color: 'black', // Cambiar el color de la letra al pasar el cursor
+                                            }
+                                        }}
+
+                                    >
+                                        {`${pais.nombre} (${pais.código})`}
+                                    </MenuItem>
+                                ))}
+                            </Select>
+                        </FormControl>
+
+                        <TextField
+                            label="Telefono*"
+                            variant="standard"
+                            onChange={changeTelefono}
+                            value={telefono}
+                            InputProps={{
+                                disableUnderline: true, // Elimina la línea inferior
+                                sx: {
+                                    border: '1px solid', // Añade un borde alrededor
+                                    borderColor: 'rgba(0, 0, 0, 0.527)', // Color del borde inicial
+                                    borderRadius: '4px', // Bordes redondeados
+                                    padding: '9px 9px', // Ajusta el padding del input
+                                    '&:hover': {
+                                        borderColor: 'rgb(9, 197, 9)', // Color del borde al hacer hover
+                                    },
+                                    '&.Mui-focused': {
+                                        border: '2px solid rgb(9, 197, 9)',
+                                        borderColor: 'rgb(9, 197, 9)', // Color del borde al hacer focus
+                                        color: 'black',
+                                        fontWeight: 'bold',
+                                    },
+
+                                },
+                            }}
+                            InputLabelProps={{
+                                sx: {
+                                    transform: 'translate(18px, 30px) scale(1.1)', // Posición inicial del label
+                                    color: 'black', // Color del label
+                                    '&.Mui-focused': {
+                                        marginBottom: '5px',
+                                        transform: 'translate(14px, 20px) scale(0.85)', // Mantiene el label dentro del borde al enfocar
+                                        color: 'YellowGreen', // Cambia el color del label cuando está enfocado
+                                        fontWeight: 'bold'
+                                    },
+                                    // Mantiene el label en la posición escalada si hay texto
+                                    '&.MuiFormLabel-filled': {
+                                        transform: 'translate(14px, 20px) scale(0.85)', // Mantiene el label arriba si hay texto
+                                        color: 'YellowGreen', // Color cuando está lleno
+                                    },
+                                    '&:not(.Mui-focused)': {
+                                        color: 'black', // Texto en negro cuando no está enfocado
+
+                                    },
+                                },
+                            }}
+
+                            sx={{
+                                width: '100%',
+                                fontSize: '15px',
+                                marginRight: '15px',
+                                '&.Mui-focused .MuiInputBase-input': {
+                                    color: 'black', // Texto en negro cuando se pierde el foco
+                                    fontWeight: 'bold',
+                                },
+                                '&.Mui-filled .MuiInputBase-input': {
+                                    fontWeight: 'bold', // Texto en negrita cuando hay contenido
+                                    color: 'black', // Texto en negro
+                                },
+                                '&:not(.Mui-focused) .MuiInputBase-input': {
+                                    color: 'black', // Texto en negro cuando no está enfocado
+                                    fontWeight: 'bold',
+                                },
+                            }}
+                        /><br />
+
+                    </div>
+                    <TextField
+                        label="Correo electronico"
+                        variant="standard"
+                        value={correo}
+                        onChange={changeCorreo}
+                        InputProps={{
+                            disableUnderline: true, // Elimina la línea inferior
+                            sx: {
+                                border: '1px solid', // Añade un borde alrededor
+                                borderColor: 'rgba(0, 0, 0, 0.527)', // Color del borde inicial
+                                borderRadius: '4px', // Bordes redondeados
+                                padding: '9px 9px', // Ajusta el padding del input
+                                '&:hover': {
+                                    borderColor: 'rgb(9, 197, 9)', // Color del borde al hacer hover
+                                },
+                                '&.Mui-focused': {
+                                    border: '2px solid rgb(9, 197, 9)',
+                                    borderColor: 'rgb(9, 197, 9)', // Color del borde al hacer focus
+                                    color: 'black',
+                                    fontWeight: 'bold',
+                                },
+
+                            },
+                        }}
+                        InputLabelProps={{
+                            sx: {
+                                transform: 'translate(18px, 30px) scale(1.1)', // Posición inicial del label
+                                color: 'black', // Color del label
+                                '&.Mui-focused': {
+                                    marginBottom: '5px',
+                                    transform: 'translate(14px, 20px) scale(0.85)', // Mantiene el label dentro del borde al enfocar
+                                    color: 'YellowGreen', // Cambia el color del label cuando está enfocado
+                                    fontWeight: 'bold'
+                                },
+                                // Mantiene el label en la posición escalada si hay texto
+                                '&.MuiFormLabel-filled': {
+                                    transform: 'translate(14px, 20px) scale(0.85)', // Mantiene el label arriba si hay texto
+                                    color: 'YellowGreen', // Color cuando está lleno
+                                },
+                                '&:not(.Mui-focused)': {
+                                    color: 'black', // Texto en negro cuando no está enfocado
+
+                                },
+                            },
+                        }}
+
+                        sx={{
+                            width: '100%',
+                            '&.Mui-focused .MuiInputBase-input': {
+                                color: 'black', // Texto en negro cuando se pierde el foco
+                                fontWeight: 'bold',
+                            },
+                            '&.Mui-filled .MuiInputBase-input': {
+                                fontWeight: 'bold', // Texto en negrita cuando hay contenido
+                                color: 'black', // Texto en negro
+                            },
+                            '&:not(.Mui-focused) .MuiInputBase-input': {
+                                color: 'black', // Texto en negro cuando no está enfocado
+                                fontWeight: 'bold',
+                            },
+                        }}
+                    />
+
+                </div>*/

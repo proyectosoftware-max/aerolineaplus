@@ -1,0 +1,149 @@
+.paso3 {
+    min-height: 100vh;
+
+}
+
+.contendorPaso3 {
+    margin-top: 100px;
+
+}
+
+.nav1Paso3 {
+    margin-left: 140px;
+}
+
+.titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 565px;
+    margin-bottom: 15px;
+
+
+}
+
+.label_total {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.label_cop_pagos {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+/*.label_precio {
+    font-size: 20px;
+    margin-left: 10px;
+}*/
+
+.label_directoPaso3 {
+    font-size: 13px;
+}
+
+
+.botonPagar {
+    width: 250px;
+    margin-top: 20px;
+    padding-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 30px;
+    font-weight: bold;
+
+}
+
+.div_resumen {
+    background-color: white;
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    border-radius: 5px;
+}
+
+.div_seleccion {
+    background-color: white;
+    width: 30%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+.p_seleccion {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.resumenCompra {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+@media screen and (max-width: '1024px') {
+   
+    .contendorPaso3 {
+        margin-top: 150px;
+     }
+
+    .tabla{
+        display: none;
+    }
+
+    .titulo {
+        font-size: 20px;
+        font-weight: bold;
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 15px;
+        text-align: center;
+
+
+    }
+
+    .botonPagar {
+        width: 100%;
+        margin-top: 20px;
+        padding-top: 7px;
+        margin-left: 0px;
+        margin-bottom: 30px;
+        padding-bottom: 7px;
+        background-color: black;
+        color: white;
+        border-radius: 30px;
+        font-weight: bold;
+
+    }
+
+    .div_resumen { 
+        background-color: white;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .div_seleccion {
+        background-color: white;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 10px;
+        padding-left: 30px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+}

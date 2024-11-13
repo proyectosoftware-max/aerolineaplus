@@ -1,0 +1,1828 @@
+{
+  "vuelos": [
+    {
+      "codigo_vuelo": "bar-car",
+      "origen": "Barranquilla",
+      "destino": "Cartagena",
+      "horarios": [
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"CTG",   
+          "tiempo_vuelo": "0h 45m",
+          "hora_salida": "06:00",
+          "hora_llegada": "06:45",
+          "valor_pasaje": "150.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "0h 45m",
+          "hora_salida": "07:30",
+          "hora_llegada": "08:15",
+          "valor_pasaje": "150.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "0h 45m",
+          "hora_salida": "09:00",
+          "hora_llegada": "09:45",
+          "valor_pasaje": "150.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "0h 45m",
+          "hora_salida": "10:30",
+          "hora_llegada": "11:15",
+          "valor_pasaje": "150.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "0h 45m",
+          "hora_salida": "12:00",
+          "hora_llegada": "12:45",
+          "valor_pasaje": "150.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "0h 45m",
+          "hora_salida": "13:30",
+          "hora_llegada": "14:15",
+          "valor_pasaje": "150.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "0h 45m",
+          "hora_salida": "15:00",
+          "hora_llegada": "15:45",
+          "valor_pasaje": "150.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "0h 45m",
+          "hora_salida": "16:30",
+          "hora_llegada": "17:15",
+          "valor_pasaje": "150.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "0h 45m",
+          "hora_salida": "18:00",
+          "hora_llegada": "18:45",
+          "valor_pasaje": "150.000"
+        }
+      ]
+     },
+     {
+      "codigo_vuelo": "bar-bog",
+      "origen": "Barranquilla",
+      "destino": "Bogotá",
+      "horarios": [
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "06:00",
+          "hora_llegada": "07:20",
+          "valor_pasaje": "250.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "07:30",
+          "hora_llegada": "08:50",
+          "valor_pasaje": "250.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "09:00",
+          "hora_llegada": "10:20",
+          "valor_pasaje": "250.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "10:30",
+          "hora_llegada": "11:50",
+          "valor_pasaje": "250.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "12:00",
+          "hora_llegada": "13:20",
+          "valor_pasaje": "250.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "13:30",
+          "hora_llegada": "14:50",
+          "valor_pasaje": "250.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "15:00",
+          "hora_llegada": "16:20",
+          "valor_pasaje": "250.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "16:30",
+          "hora_llegada": "17:50",
+          "valor_pasaje": "250.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "18:00",
+          "hora_llegada": "19:20",
+          "valor_pasaje": "250.000"
+        }
+      ]
+    },
+    {
+      "codigo_vuelo": "bar-med",
+      "origen": "Barranquilla",
+      "destino": "Medellín",
+      "horarios": [
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "06:00",
+          "hora_llegada": "07:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "07:30",
+          "hora_llegada": "08:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "09:00",
+          "hora_llegada": "10:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "10:30",
+          "hora_llegada": "11:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "12:00",
+          "hora_llegada": "13:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "13:30",
+          "hora_llegada": "14:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "15:00",
+          "hora_llegada": "16:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "16:30",
+          "hora_llegada": "17:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "18:00",
+          "hora_llegada": "19:10",
+          "valor_pasaje": "220.000"
+        }
+      ]
+    },
+    {
+      "codigo_vuelo": "bar-sam",
+      "origen": "Barranquilla",
+      "destino": "Santa Marta",
+      "horarios": [
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "0h 35m",
+          "hora_salida": "06:00",
+          "hora_llegada": "06:35",
+          "valor_pasaje": "130.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "0h 35m",
+          "hora_salida": "07:30",
+          "hora_llegada": "08:05",
+          "valor_pasaje": "130.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "0h 35m",
+          "hora_salida": "09:00",
+          "hora_llegada": "09:35",
+          "valor_pasaje": "130.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "0h 35m",
+          "hora_salida": "10:30",
+          "hora_llegada": "11:05",
+          "valor_pasaje": "130.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "0h 35m",
+          "hora_salida": "12:00",
+          "hora_llegada": "12:35",
+          "valor_pasaje": "130.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "0h 35m",
+          "hora_salida": "13:30",
+          "hora_llegada": "14:05",
+          "valor_pasaje": "130.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "0h 35m",
+          "hora_salida": "15:00",
+          "hora_llegada": "15:35",
+          "valor_pasaje": "130.000"
+        },
+        {"codigo_origen":"BAQ",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "0h 35m",
+          "hora_salida": "16:30",
+          "hora_llegada": "17:05",
+          "valor_pasaje": "130.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "0h 35m",
+          "hora_salida": "18:00",
+          "hora_llegada": "18:35",
+          "valor_pasaje": "130.000"
+        }
+      ]
+    },
+    {
+      "codigo_vuelo": "bog-med",
+      "origen": "Bogotá",
+      "destino": "Medellín",
+      "horarios": [
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 5m",
+          "hora_salida": "06:00",
+          "hora_llegada": "07:05",
+          "valor_pasaje": "210.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 5m",
+          "hora_salida": "07:30",
+          "hora_llegada": "08:35",
+          "valor_pasaje": "210.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 5m",
+          "hora_salida": "09:00",
+          "hora_llegada": "10:05",
+          "valor_pasaje": "210.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 5m",
+          "hora_salida": "10:30",
+          "hora_llegada": "11:35",
+          "valor_pasaje": "210.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 5m",
+          "hora_salida": "12:00",
+          "hora_llegada": "13:05",
+          "valor_pasaje": "210.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 5m",
+          "hora_salida": "13:30",
+          "hora_llegada": "14:35",
+          "valor_pasaje": "210.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 5m",
+          "hora_salida": "15:00",
+          "hora_llegada": "16:05",
+          "valor_pasaje": "210.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 5m",
+          "hora_salida": "16:30",
+          "hora_llegada": "17:35",
+          "valor_pasaje": "210.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 5m",
+          "hora_salida": "18:00",
+          "hora_llegada": "19:05",
+          "valor_pasaje": "210.000"
+        }
+      ]
+    },
+    {
+      "codigo_vuelo": "bog-car",
+      "origen": "Bogotá",
+      "destino": "Cartagena",
+      "horarios": [
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 25m",
+          "hora_salida": "06:00",
+          "hora_llegada": "07:25",
+          "valor_pasaje": "230.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 25m",
+          "hora_salida": "07:30",
+          "hora_llegada": "08:55",
+          "valor_pasaje": "230.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 25m",
+          "hora_salida": "09:00",
+          "hora_llegada": "10:25",
+          "valor_pasaje": "230.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 25m",
+          "hora_salida": "10:30",
+          "hora_llegada": "11:55",
+          "valor_pasaje": "230.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 25m",
+          "hora_salida": "12:00",
+          "hora_llegada": "13:25",
+          "valor_pasaje": "230.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 25m",
+          "hora_salida": "13:30",
+          "hora_llegada": "14:55",
+          "valor_pasaje": "230.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 25m",
+          "hora_salida": "15:00",
+          "hora_llegada": "16:25",
+          "valor_pasaje": "230.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 25m",
+          "hora_salida": "16:30",
+          "hora_llegada": "17:55",
+          "valor_pasaje": "230.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 25m",
+          "hora_salida": "18:00",
+          "hora_llegada": "19:25",
+          "valor_pasaje": "230.000"
+        }
+      ]
+    },
+    {
+      "codigo_vuelo": "bog-sam",
+      "origen": "Bogotá",
+      "destino": "Santa Marta",
+      "horarios": [
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 30m",
+          "hora_salida": "06:00",
+          "hora_llegada": "07:30",
+          "valor_pasaje": "240.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 30m",
+          "hora_salida": "07:30",
+          "hora_llegada": "09:00",
+          "valor_pasaje": "240.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 30m",
+          "hora_salida": "09:00",
+          "hora_llegada": "10:30",
+          "valor_pasaje": "240.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 30m",
+          "hora_salida": "10:30",
+          "hora_llegada": "12:00",
+          "valor_pasaje": "240.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 30m",
+          "hora_salida": "12:00",
+          "hora_llegada": "13:30",
+          "valor_pasaje": "240.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 30m",
+          "hora_salida": "13:30",
+          "hora_llegada": "15:00",
+          "valor_pasaje": "240.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 30m",
+          "hora_salida": "15:00",
+          "hora_llegada": "16:30",
+          "valor_pasaje": "240.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 30m",
+          "hora_salida": "16:30",
+          "hora_llegada": "18:00",
+          "valor_pasaje": "240.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 30m",
+          "hora_salida": "18:00",
+          "hora_llegada": "19:30",
+          "valor_pasaje": "240.000"
+        }
+      ]
+    },
+    {
+      "codigo_vuelo": "bog-bar",
+      "origen": "Bogotá",
+      "destino": "Barranquilla",
+      "horarios": [
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "06:00",
+          "hora_llegada": "07:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "07:30",
+          "hora_llegada": "08:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "09:00",
+          "hora_llegada": "10:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "10:30",
+          "hora_llegada": "11:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "12:00",
+          "hora_llegada": "13:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "13:30",
+          "hora_llegada": "14:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "15:00",
+          "hora_llegada": "16:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "16:30",
+          "hora_llegada": "17:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "18:00",
+          "hora_llegada": "19:10",
+          "valor_pasaje": "220.000"
+        }
+      ]
+    },
+    {
+      "codigo_vuelo": "med-car",
+      "origen": "Medellín",
+      "destino": "Cartagena",
+      "horarios": [
+        {
+          "codigo_origen":"MDE",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "06:00",
+          "hora_llegada": "07:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          
+          "codigo_origen":"MDE",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "07:30",
+          "hora_llegada": "08:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          
+          "codigo_origen":"MDE",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "09:00",
+          "hora_llegada": "10:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          
+          "codigo_origen":"MDE",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "10:30",
+          "hora_llegada": "11:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          
+          "codigo_origen":"MDE",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "12:00",
+          "hora_llegada": "13:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          
+          "codigo_origen":"MDE",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "13:30",
+          "hora_llegada": "14:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          
+          "codigo_origen":"MDE",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "15:00",
+          "hora_llegada": "16:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          
+          "codigo_origen":"MDE",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "16:30",
+          "hora_llegada": "17:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          
+          "codigo_origen":"MDE",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "18:00",
+          "hora_llegada": "19:10",
+          "valor_pasaje": "220.000"
+        }
+      ]
+    },
+    {
+     "codigo_vuelo": "bar-bog",
+     "origen": "Medellín",
+     "destino": "Bogotá",
+     "horarios": [
+       {
+         "codigo_origen":"MDE",
+         "codigo_destino":"BOG",
+         "tiempo_vuelo": "1h 20m",
+         "hora_salida": "06:00",
+         "hora_llegada": "07:20",
+         "valor_pasaje": "250.000"
+       },
+       {
+         "codigo_origen":"MDE",
+         "codigo_destino":"BOG",
+         "tiempo_vuelo": "1h 20m",
+         "hora_salida": "07:30",
+         "hora_llegada": "08:50",
+         "valor_pasaje": "250.000"
+       },
+       {
+         "codigo_origen":"MDE",
+         "codigo_destino":"BOG",
+         "tiempo_vuelo": "1h 20m",
+         "hora_salida": "09:00",
+         "hora_llegada": "10:20",
+         "valor_pasaje": "250.000"
+       },
+       {
+         "codigo_origen":"MDE",
+         "codigo_destino":"BOG",
+         "tiempo_vuelo": "1h 20m",
+         "hora_salida": "10:30",
+         "hora_llegada": "11:50",
+         "valor_pasaje": "250.000"
+       },
+       {
+         "codigo_origen":"MDE",
+         "codigo_destino":"BOG",
+         "tiempo_vuelo": "1h 20m",
+         "hora_salida": "12:00",
+         "hora_llegada": "13:20",
+         "valor_pasaje": "250.000"
+       },
+       {
+         "codigo_origen":"MDE",
+         "codigo_destino":"BOG",
+         "tiempo_vuelo": "1h 20m",
+         "hora_salida": "13:30",
+         "hora_llegada": "14:50",
+         "valor_pasaje": "250.000"
+       },
+       {
+         "codigo_origen":"MDE",
+         "codigo_destino":"BOG",
+         "tiempo_vuelo": "1h 20m",
+         "hora_salida": "15:00",
+         "hora_llegada": "16:20",
+         "valor_pasaje": "250.000"
+       },
+       {
+         "codigo_origen":"MDE",
+         "codigo_destino":"BOG",
+         "tiempo_vuelo": "1h 20m",
+         "hora_salida": "16:30",
+         "hora_llegada": "17:50",
+         "valor_pasaje": "250.000"
+       },
+       {
+         "codigo_origen":"MDE",
+         "codigo_destino":"BOG",
+         "tiempo_vuelo": "1h 20m",
+         "hora_salida": "18:00",
+         "hora_llegada": "19:20",
+         "valor_pasaje": "250.000"
+       }
+     ]
+   },
+    {
+      "codigo_vuelo": "car-bar",
+      "origen": "Medellín",
+      "destino": "Barranquilla",
+      "horarios": [
+        {
+          "codigo_origen":"MDE",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "06:00",
+          "hora_llegada": "07:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"MDE",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "07:30",
+          "hora_llegada": "08:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"MDE",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "09:00",
+          "hora_llegada": "10:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"MDE",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "10:30",
+          "hora_llegada": "11:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"MDE",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "12:00",
+          "hora_llegada": "13:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"MDE",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "13:30",
+          "hora_llegada": "14:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"MDE",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "15:00",
+          "hora_llegada": "16:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"MDE",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "16:30",
+          "hora_llegada": "17:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"MDE",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "18:00",
+          "hora_llegada": "19:10",
+          "valor_pasaje": "220.000"
+        }
+      ]
+    },
+    {
+      "codigo_vuelo": "med-sam",
+      "origen": "Medellín",
+      "destino": "Santa Marta",
+      "horarios": [
+        {
+          
+          "codigo_origen":"MDE",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "06:00",
+          "hora_llegada": "07:20",
+          "valor_pasaje": "230.000"
+        },
+        {
+          
+          "codigo_origen":"MDE",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "07:30",
+          "hora_llegada": "08:50",
+          "valor_pasaje": "230.000"
+        },
+        {
+          "codigo_origen":"MDE",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "09:00",
+          "hora_llegada": "10:20",
+          "valor_pasaje": "230.000"
+        },
+        {
+          "codigo_origen":"MDE",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "10:30",
+          "hora_llegada": "11:50",
+          "valor_pasaje": "230.000"
+        },
+        {
+          "codigo_origen":"MDE",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "12:00",
+          "hora_llegada": "13:20",
+          "valor_pasaje": "230.000"
+        },
+        {
+          "codigo_origen":"MDE",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "13:30",
+          "hora_llegada": "14:50",
+          "valor_pasaje": "230.000"
+        },
+        {
+          "codigo_origen":"MDE",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "15:00",
+          "hora_llegada": "16:20",
+          "valor_pasaje": "230.000"
+        },
+        {
+          "codigo_origen":"MDE",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "16:30",
+          "hora_llegada": "17:50",
+          "valor_pasaje": "230.000"
+        },
+        {
+          "codigo_origen":"MDE",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "18:00",
+          "hora_llegada": "19:20",
+          "valor_pasaje": "230.000"
+        }
+      ]
+    },
+    {
+      "codigo_vuelo": "bog-med",
+      "origen": "Bogotá",
+      "destino": "Medellín",
+      "horarios": [
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 5m",
+          "hora_salida": "06:00",
+          "hora_llegada": "07:05",
+          "valor_pasaje": "210.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 5m",
+          "hora_salida": "07:30",
+          "hora_llegada": "08:35",
+          "valor_pasaje": "210.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 5m",
+          "hora_salida": "09:00",
+          "hora_llegada": "10:05",
+          "valor_pasaje": "210.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 5m",
+          "hora_salida": "10:30",
+          "hora_llegada": "11:35",
+          "valor_pasaje": "210.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 5m",
+          "hora_salida": "12:00",
+          "hora_llegada": "13:05",
+          "valor_pasaje": "210.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 5m",
+          "hora_salida": "13:30",
+          "hora_llegada": "14:35",
+          "valor_pasaje": "210.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 5m",
+          "hora_salida": "15:00",
+          "hora_llegada": "16:05",
+          "valor_pasaje": "210.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 5m",
+          "hora_salida": "16:30",
+          "hora_llegada": "17:35",
+          "valor_pasaje": "210.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 5m",
+          "hora_salida": "18:00",
+          "hora_llegada": "19:05",
+          "valor_pasaje": "210.000"
+        }
+      ]
+    },
+    {
+      "codigo_vuelo": "bog-bar",
+      "origen": "Bogotá",
+      "destino": "Barranquilla",
+      "horarios": [
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "06:00",
+          "hora_llegada": "07:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "07:30",
+          "hora_llegada": "08:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "09:00",
+          "hora_llegada": "10:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "10:30",
+          "hora_llegada": "11:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "12:00",
+          "hora_llegada": "13:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "13:30",
+          "hora_llegada": "14:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "15:00",
+          "hora_llegada": "16:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "16:30",
+          "hora_llegada": "17:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "18:00",
+          "hora_llegada": "19:10",
+          "valor_pasaje": "220.000"
+        }
+      ]
+    },
+    {
+      "codigo_vuelo": "bog-car",
+      "origen": "Bogotá",
+      "destino": "Cartagena",
+      "horarios": [
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 25m",
+          "hora_salida": "06:00",
+          "hora_llegada": "07:25",
+          "valor_pasaje": "230.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 25m",
+          "hora_salida": "07:30",
+          "hora_llegada": "08:55",
+          "valor_pasaje": "230.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 25m",
+          "hora_salida": "09:00",
+          "hora_llegada": "10:25",
+          "valor_pasaje": "230.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 25m",
+          "hora_salida": "10:30",
+          "hora_llegada": "11:55",
+          "valor_pasaje": "230.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 25m",
+          "hora_salida": "12:00",
+          "hora_llegada": "13:25",
+          "valor_pasaje": "230.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 25m",
+          "hora_salida": "13:30",
+          "hora_llegada": "14:55",
+          "valor_pasaje": "230.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 25m",
+          "hora_salida": "15:00",
+          "hora_llegada": "16:25",
+          "valor_pasaje": "230.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 25m",
+          "hora_salida": "16:30",
+          "hora_llegada": "17:55",
+          "valor_pasaje": "230.000"
+        },
+        {
+          "codigo_origen":"BOG",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "1h 25m",
+          "hora_salida": "18:00",
+          "hora_llegada": "19:25",
+          "valor_pasaje": "230.000"
+        }
+      ]
+    },
+    {
+      "codigo_vuelo": "car-sam",
+      "origen": "Cartagena",
+      "destino": "Santa Marta",
+      "horarios": [
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 30m",
+          "hora_salida": "06:00",
+          "hora_llegada": "07:30",
+          "valor_pasaje": "240.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 30m",
+          "hora_salida": "07:30",
+          "hora_llegada": "09:00",
+          "valor_pasaje": "240.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 30m",
+          "hora_salida": "09:00",
+          "hora_llegada": "10:30",
+          "valor_pasaje": "240.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 30m",
+          "hora_salida": "10:30",
+          "hora_llegada": "12:00",
+          "valor_pasaje": "240.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 30m",
+          "hora_salida": "12:00",
+          "hora_llegada": "13:30",
+          "valor_pasaje": "240.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 30m",
+          "hora_salida": "13:30",
+          "hora_llegada": "15:00",
+          "valor_pasaje": "240.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 30m",
+          "hora_salida": "15:00",
+          "hora_llegada": "16:30",
+          "valor_pasaje": "240.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 30m",
+          "hora_salida": "16:30",
+          "hora_llegada": "18:00",
+          "valor_pasaje": "240.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"SMR",
+          "tiempo_vuelo": "1h 30m",
+          "hora_salida": "18:00",
+          "hora_llegada": "19:30",
+          "valor_pasaje": "240.000"
+        }
+      ]
+    }, 
+     {
+      "codigo_vuelo": "car-bog",
+      "origen": "Cartagena",
+      "destino": "Bogotá",
+      "horarios": [
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "06:00",
+          "hora_llegada": "07:20",
+          "valor_pasaje": "250.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "07:30",
+          "hora_llegada": "08:50",
+          "valor_pasaje": "250.000"
+        },
+        {
+         "codigo_origen":"CTG",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "09:00",
+          "hora_llegada": "10:20",
+          "valor_pasaje": "250.000"
+        },
+        { "codigo_origen":"CTG",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "10:30",
+          "hora_llegada": "11:50",
+          "valor_pasaje": "250.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "12:00",
+          "hora_llegada": "13:20",
+          "valor_pasaje": "250.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "13:30",
+          "hora_llegada": "14:50",
+          "valor_pasaje": "250.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "15:00",
+          "hora_llegada": "16:20",
+          "valor_pasaje": "250.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "16:30",
+          "hora_llegada": "17:50",
+          "valor_pasaje": "250.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "18:00",
+          "hora_llegada": "19:20",
+          "valor_pasaje": "250.000"
+        }
+      ]
+    },
+    {
+      "codigo_vuelo": "bar-med",
+      "origen": "Cartagena",
+      "destino": "Medellín",
+      "horarios": [
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "06:00",
+          "hora_llegada": "07:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "07:30",
+          "hora_llegada": "08:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "09:00",
+          "hora_llegada": "10:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "10:30",
+          "hora_llegada": "11:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "12:00",
+          "hora_llegada": "13:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "13:30",
+          "hora_llegada": "14:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "15:00",
+          "hora_llegada": "16:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "16:30",
+          "hora_llegada": "17:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "18:00",
+          "hora_llegada": "19:10",
+          "valor_pasaje": "220.000"
+        }
+      ]
+    },
+    {
+      "codigo_vuelo": "car-bar",
+      "origen": "Cartagena",
+      "destino": "Barranquilla",
+      "horarios": [
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "06:00",
+          "hora_llegada": "07:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "07:30",
+          "hora_llegada": "08:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "09:00",
+          "hora_llegada": "10:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "10:30",
+          "hora_llegada": "11:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "12:00",
+          "hora_llegada": "13:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "13:30",
+          "hora_llegada": "14:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "15:00",
+          "hora_llegada": "16:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "16:30",
+          "hora_llegada": "17:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"CTG",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "18:00",
+          "hora_llegada": "19:10",
+          "valor_pasaje": "220.000"
+        }
+      ]
+    },{
+      "codigo_vuelo": "bar-car",
+      "origen": "Barranquilla",
+      "destino": "Cartagena",
+      "horarios": [
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"CTG",   
+          "tiempo_vuelo": "0h 45m",
+          "hora_salida": "06:00",
+          "hora_llegada": "06:45",
+          "valor_pasaje": "150.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "0h 45m",
+          "hora_salida": "07:30",
+          "hora_llegada": "08:15",
+          "valor_pasaje": "150.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "0h 45m",
+          "hora_salida": "09:00",
+          "hora_llegada": "09:45",
+          "valor_pasaje": "150.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "0h 45m",
+          "hora_salida": "10:30",
+          "hora_llegada": "11:15",
+          "valor_pasaje": "150.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "0h 45m",
+          "hora_salida": "12:00",
+          "hora_llegada": "12:45",
+          "valor_pasaje": "150.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "0h 45m",
+          "hora_salida": "13:30",
+          "hora_llegada": "14:15",
+          "valor_pasaje": "150.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "0h 45m",
+          "hora_salida": "15:00",
+          "hora_llegada": "15:45",
+          "valor_pasaje": "150.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "0h 45m",
+          "hora_salida": "16:30",
+          "hora_llegada": "17:15",
+          "valor_pasaje": "150.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"CTG",
+          "tiempo_vuelo": "0h 45m",
+          "hora_salida": "18:00",
+          "hora_llegada": "18:45",
+          "valor_pasaje": "150.000"
+        }
+      ]
+     },
+     {
+      "codigo_vuelo": "bar-bog",
+      "origen": "Barranquilla",
+      "destino": "Bogotá",
+      "horarios": [
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "06:00",
+          "hora_llegada": "07:20",
+          "valor_pasaje": "250.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "07:30",
+          "hora_llegada": "08:50",
+          "valor_pasaje": "250.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "09:00",
+          "hora_llegada": "10:20",
+          "valor_pasaje": "250.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "10:30",
+          "hora_llegada": "11:50",
+          "valor_pasaje": "250.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "12:00",
+          "hora_llegada": "13:20",
+          "valor_pasaje": "250.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "13:30",
+          "hora_llegada": "14:50",
+          "valor_pasaje": "250.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "15:00",
+          "hora_llegada": "16:20",
+          "valor_pasaje": "250.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "16:30",
+          "hora_llegada": "17:50",
+          "valor_pasaje": "250.000"
+        },
+        {
+          "codigo_origen":"BAQ",
+          "codigo_destino":"BOG",
+          "tiempo_vuelo": "1h 20m",
+          "hora_salida": "18:00",
+          "hora_llegada": "19:20",
+          "valor_pasaje": "250.000"
+        }
+      ]
+    },
+    {
+      "codigo_vuelo": "sam-med",
+      "origen": "Santa Marta",
+      "destino": "Medellín",
+      "horarios": [
+        {
+          "codigo_origen":"SMR",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "06:00",
+          "hora_llegada": "07:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"SMR",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "07:30",
+          "hora_llegada": "08:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"SMR",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "09:00",
+          "hora_llegada": "10:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"SMR",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "10:30",
+          "hora_llegada": "11:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"SMR",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "12:00",
+          "hora_llegada": "13:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"SMR",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "13:30",
+          "hora_llegada": "14:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"SMR",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "15:00",
+          "hora_llegada": "16:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"SMR",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "16:30",
+          "hora_llegada": "17:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"SMR",
+          "codigo_destino":"MDE",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "18:00",
+          "hora_llegada": "19:10",
+          "valor_pasaje": "220.000"
+        }
+      ]
+    },
+    {
+      "codigo_vuelo": "sam-bar",
+      "origen": "Santa Marta",
+      "destino": "Barranquilla",
+      "horarios": [
+        {
+          "codigo_origen":"SMR",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "06:00",
+          "hora_llegada": "07:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"SMR",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "07:30",
+          "hora_llegada": "08:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"SMR",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "09:00",
+          "hora_llegada": "10:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"SMR",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "10:30",
+          "hora_llegada": "11:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"SMR",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "12:00",
+          "hora_llegada": "13:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"SMR",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "13:30",
+          "hora_llegada": "14:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"SMR",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "15:00",
+          "hora_llegada": "16:10",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"SMR",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "16:30",
+          "hora_llegada": "17:40",
+          "valor_pasaje": "220.000"
+        },
+        {
+          "codigo_origen":"SMR",
+          "codigo_destino":"BAQ",
+          "tiempo_vuelo": "1h 10m",
+          "hora_salida": "18:00",
+          "hora_llegada": "19:10",
+          "valor_pasaje": "220.000"
+        }
+      ]
+    }
+  ]
+}

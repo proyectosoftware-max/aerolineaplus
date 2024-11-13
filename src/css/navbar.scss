@@ -1,0 +1,220 @@
+.navbarEscritorio {
+    background-color: white;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    /*border:  1px solid green;*/
+    /*-webkit-box-shadow: 0px 5px 32px -3px rgba(0,0,0,0.6); 
+    box-shadow: 0px 5px 32px -3px rgba(0,0,0,0.6);*/
+}
+
+
+
+.hidden {
+    opacity: 0;
+    transform: translateY(-100%);
+    pointer-events: none;
+    /* Evita la interacción cuando está oculto */
+
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+    transition: opacity 0.3s ease,
+
+}
+
+.navbar-scroll {
+    background-color: white;
+    /* Color de fondo del Navbar que aparece al hacer scroll */
+    -webkit-box-shadow: 0px 5px 32px -3px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 5px 32px -3px rgba(0, 0, 0, 0.6);
+    z-index: 1301 !important;
+}
+
+.ciudad1 .ciudad2 {
+    font-size: 14px;
+}
+
+.a {
+    margin-left: 4px;
+    margin-right: 4px;
+
+
+}
+
+.navbar-brand {
+    margin-right: 50px !important;
+}
+
+.nav1 {
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.nav2 {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin-top: -5px;
+}
+
+
+
+.adulto {
+    margin-left: 20px;
+    margin-right: 30px;
+    font-size: 15px;
+}
+
+.letra_editar {
+    text-decoration: underline !important;
+    color: rgb(90, 142, 155) !important;
+    margin-left: -20px;
+    font-size: 15px !important;
+}
+
+.letra_editar:hover {
+    font-weight: bold;
+}
+
+.pasos {
+    font-size: 16px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.boton_cop {
+    font-weight: bold;
+    width: 200px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.label_cero {
+    font-size: 17px;
+    color: black;
+}
+
+.barra {
+    width: 130px;
+    color: blue !important;
+}
+
+.barra .progress-bar {
+    background-color: rgb(16, 214, 16) !important;
+    color: blue;
+}
+
+
+.container1 {
+    /*border: 1px solid blue;*/
+    margin-left: 30px !important;
+
+}
+
+.container2 {
+    /*border: 1px solid red;*/
+    width: 620px !important;
+
+}
+
+.div_label_seleccion {
+    display: none;      
+}
+
+
+@media screen and (max-width: 1024px) {
+    .navbarEscritorio {
+        display: none !important;
+    }
+
+    .navbarMovil {
+        display: inline !important;
+        width: 100%;
+        height: auto;
+        background-color: white;
+        color: black;
+        font-size: 10px;
+    }
+
+    .div_label_seleccion {
+        margin-top: -10px;
+        background-color: black;
+        display: flex;   
+    }
+
+    .label_seleccion {
+        padding: 15px;
+        font-size: 17px;
+        color: white;
+        margin: 0 auto;
+    }
+
+    .iconoMovil{
+     width: 45px;
+     margin-left: 5px;
+    }
+
+    .div_precioMovil{
+        width: 100%;
+    }
+
+    .div_contenidoPrecioMovil{
+        float: right;
+        margin-top: 10px;
+        margin-right: 30px;
+    }
+
+    .label_copMovil{
+        margin-left: 8px;
+        color:  rgb(216, 213, 213);
+        font-size: 14px; 
+    }
+
+    .div_menuBar {
+        margin-top: 10px;
+    }
+
+
+    .fecha {
+        margin-left: 7px;
+   
+        font-size: 13px;
+
+    }
+
+    .adulto {
+        margin-left: 10px;
+        margin-right: 30px;
+        font-size: 13px;
+    }
+
+    .letra_editar {
+        margin-top: -50px;
+        float: right;
+        margin-right: 20px;
+        width: 30px;
+        height: 30px;
+        padding: 2px;
+        text-align: center;
+        border: 1px solid rgb(90, 142, 155);
+        border-radius: 200%;
+        background-color: rgb(90, 142, 155);
+    }
+
+    .li_ciudadMovil{
+        background-color: white;
+        border: none;
+    }
+
+    .li_ciudadMovil:hover{
+        background-color: white;
+    }
+}

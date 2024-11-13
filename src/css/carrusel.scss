@@ -1,0 +1,158 @@
+.carousel-wrapper {
+    display: flex;
+    justify-content: center; /* Centra el carrusel horizontalmente */
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Oculta el contenido que se desborda del contenedor */
+  }
+  
+  .carousel-container {
+    display: flex;
+    overflow: hidden;
+    position: relative; /* Necesario para posicionar los controles de navegación */
+  }
+  
+  .carousel-content {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel-item-content {
+    flex: 0 0 auto; /* Evita que los elementos se estiren */
+    width: 170px; /* Ajusta el ancho de cada elemento */
+    padding: 20px !important;
+    text-align: center; /* Centra el texto dentro de cada elemento */
+    border-radius: 8px; /* Bordes redondeados para cada cuadro */
+    padding: 10px;
+    background-color: #f8f9fa; /* Color de fondo para cada elemento */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera para cada elemento */
+    margin: 0; /* Elimina el margen entre los cuadros */
+  }
+  
+  .carousel-control {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: black; /* Color de las flechas de navegación */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Centra verticalmente las flechas */
+    z-index: 10; /* Asegura que las flechas estén sobre el contenido del carrusel */
+  }
+  
+  .carousel-control.prev {
+    left: 50px; /* Ajusta el espacio a la izquierda del carrusel */
+  }
+  
+  .carousel-control.next {
+    right: 50px; /* Ajusta el espacio a la derecha del carrusel */
+  }
+
+  .label_fecha{
+     font-size: 17px;;
+  }
+
+  .label_cop{
+    font-size: 15px;
+  }
+
+  .label_precio{
+    font-size: 18px;
+  }
+
+
+  .div_accordion{
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+
+ .accordion{
+   /* background-color: red !important;*/
+    border-radius: 30px !important;
+    width: 95%;
+    box-shadow: 1px 5px 10px 5px rgba(0, 0, 0, 0.16) !important; 
+    -moz-box-shadow: 1px 5px 10px 5px rgba(0, 0, 0, 0.16)!important; 
+    -webkit-box-shadow: 1px 5px 15px 5px rgba(0, 0, 0, 0.16)!important;
+ }
+
+ .accordionTarifas{
+    border-radius: 10px !important;
+    background-color: rgba(236, 232, 232, 0.014) !important;
+    width: 100%;
+    margin-left: -10px;
+    border: 3px solid orange;
+    font-size: 20px !important;
+    box-shadow: 1px 3px 10px 3px rgba(0, 0, 0, 0.16) !important; 
+    -moz-box-shadow: 1px 3px 3px 3px rgba(0, 0, 0, 0.16)!important; 
+    -webkit-box-shadow: 1px 3px 13px 3px rgba(0, 0, 0, 0.16)!important;
+ }
+
+ @media screen and (max-width: 1024px){
+  .carousel-wrapper {
+    display: flex;
+    justify-content: center; /* Centra el carrusel horizontalmente */
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden; /* Oculta el contenido que se desborda del contenedor */
+    margin-top: 200px;
+    margin-left: -1px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+.carousel-item-content {
+  flex: 0 0 auto; /* Evita que los elementos se estiren */
+  width: 12%; /* Ajusta el ancho de cada elemento */
+  height: 10%;
+  margin-right: 10px !important;
+  padding-top: 15px !important;
+  padding-bottom: 65px !important;
+  text-align: center; /* Centra el texto dentro de cada elemento */
+  border-radius: 20px; /* Bordes redondeados para cada cuadro */
+  padding: 5px;
+  background-color: #f8f9fa; /* Color de fondo para cada elemento */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera para cada elemento */
+  margin: 0; /* Elimina el margen entre los cuadros */
+
+}
+
+.carousel-control {
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  color: black;/* Color de las flechas de navegación */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Centra verticalmente las flechas */
+  z-index: 10; /* Asegura que las flechas estén sobre el contenido del carrusel */
+  border-radius: 70%;
+}
+
+.carousel-control.prev {
+  width: 25px;
+  left: 1px; /* Ajusta el espacio a la izquierda del carrusel */
+  margin-top: -10px;
+}
+
+.carousel-control.next {
+  width: 25px;
+  right: 1px; /* Ajusta el espacio a la derecha del carrusel */
+  margin-top: -10px;
+}
+
+.label_fecha{
+  font-size: 15px;;
+}
+
+.label_cop{
+  font-size: 13px;
+}
+
+.label_precio{
+  margin-left: 2px;
+ font-size: 15px;
+}
+
+ }

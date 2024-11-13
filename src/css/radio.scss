@@ -1,0 +1,96 @@
+.custom-radio-container {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  width: 25%;
+  border-radius: 10px;
+  font-size: 15px;
+
+}
+
+.form-check-label {
+  margin-left: 5px;
+}
+
+.custom-radio {
+  margin-right: 20px;
+  /* Espacio entre los radios */
+}
+
+.custom-radio .form-check-input {
+  position: relative;
+  appearance: none;
+  /* Remueve los estilos predeterminados del radio button */
+  background-color: #fff;
+  /* Fondo blanco cuando no seleccionado */
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+
+}
+
+.custom-radio .form-check-input:checked {
+  background-color: #16bf00;
+  /* Fondo verde claro cuando seleccionado */
+  border-color: #16bf00;
+  /* Borde verde claro cuando seleccionado */
+  outline: none;
+
+}
+
+.custom-radio .form-check-input:checked::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  /* Fondo blanco para el punto interior */
+  border: 2px solid #16bf00;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-radio .form-check-input:focus {
+  box-shadow: 0 0 0 4px rgba(0, 191, 174, 0.5);
+  /* Efecto azul claro al enfocar */
+  transition: box-shadow 0.3s ease-out;
+  /* Transición suave para el efecto de enfoque */
+}
+
+/* Estilo para deshacer el efecto de enfoque después de un tiempo */
+@keyframes focusAnimation {
+  from {
+    box-shadow: 0 0 0 12px rgba(0, 191, 174, 0.5);
+  }
+
+  to {
+    box-shadow: 0 0 0 0 rgba(0, 191, 174, 0.5);
+  }
+}
+
+.custom-radio .form-check-input:focus {
+  animation: focusAnimation 0.5s forwards;
+  /* Aplicar la animación */
+}
+
+@media screen and (max-width: '1024px') {
+  .div_solo_idaMovil {
+    margin: 0 auto;
+    border-radius: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.356);
+    padding: 3px;
+    width: 25%;
+    height: 35px;
+    background-color: white;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.21) !important;
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.21) !important;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.21) !important;
+  }
+}

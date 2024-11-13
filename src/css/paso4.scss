@@ -1,0 +1,67 @@
+
+.div_paso4{
+  margin-bottom: 300px;
+}
+
+.contenedorPaso4{
+ margin-top: 150px !important;
+ width: 90%;
+ text-align: center;
+ margin: 0 auto;
+ border-radius: 20px;
+ padding: 15px;
+ -webkit-box-shadow: -2px 2px 14px 0px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: -2px 2px 14px 0px rgba(0, 0, 0, 0.29);
+    box-shadow: -2px 2px 14px 0px rgba(0, 0, 0, 0.29);
+}
+
+.p_disfruta{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.p_continua{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.boton_continuar {
+    width: 180px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    margin-right: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: right;
+}
+
+@media screen and (max-width: '1024px'){
+    .p_disfruta{
+        font-size: 17px;
+        font-weight: bold;
+    }
+    
+    .p_continua{
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .boton_continuar {
+        width: 100%;
+        border-radius: 30px;
+        background-color: black;
+        color: white;
+        margin-top: 15px;
+        margin-right: 0px;
+        font-size: 17px;
+        font-weight: bold;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        float: none;
+    }
+
+}
