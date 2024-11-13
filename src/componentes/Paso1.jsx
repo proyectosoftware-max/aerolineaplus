@@ -619,7 +619,7 @@ const Paso1 = () => {
                                                     <label className='desdeSemiMovil'>Desde</label><br />
                                                     <label className='label_cop_MovilSemiMovil'>
                                                         COP
-                                                    </label><label className='labelprecioSemiMovil'>{`${formatPrice(selectedPrice)}`}</label></label>
+                                                    </label><label className='label_precioSemiMovil'>{`${formatPrice(selectedPrice)}`}</label></label>
                                             </div>
                                         </div>
                                     </div>
