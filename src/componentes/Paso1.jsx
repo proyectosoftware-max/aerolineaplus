@@ -366,7 +366,7 @@ const Paso1 = () => {
 
             <div className='fondoPaso1'>
                 <p className='p_ida'><FlightTakeoffIcon className='avion' sx={{ fontSize: '25px' }} /><label className='letra_ida' style={{ marginLeft: '5px' }}>Ida:</label> {origen} <label style={{ marginLeft: '5px', marginRight: '5px' }}>a</label>{destino}</p>
-                <p className='p_idaMovil'><label className='letra_idaMovil' style={{ marginLeft: '5px' }}>Ida:<br /></label><br /> <FlightTakeoffIcon className='avionMovil' sx={{ fontSize: '25px' }} /> {origen} <label style={{ marginLeft: '5px', marginRight: '5px' }}>a</label>{destino}</p>
+                <p className='p_idaMovil'><label className='letra_idaMovil' style={{ marginLeft: '5px' , fontWeight:'normal' }}>Ida:<br /></label><br /> <FlightTakeoffIcon className='avionMovil' sx={{ fontSize: '25px' }} /> {origen} <label style={{ marginLeft: '5px', marginRight: '5px' }}>a</label>{destino}</p>
 
                 <div className="carousel-wrapper">
                     <button className="carousel-control prev" onClick={handlePrev}>&#10094;</button>

@@ -35,7 +35,7 @@
     border-radius: 20px !important;
 }
 
-.div_accordionMovil, .div_accordionSemiMovil, .div_accordionMovilResumen {
+.div_accordionMovil, .div_accordionSemiMovil, .p_idaMovil, .div_accordionMovilResumen {
     display: none;
 }
 
@@ -230,9 +230,6 @@
     font-size: 15px;
 }
 
-.p_idaMovil{
-    display: none;
-}
 
 
 
@@ -259,8 +256,11 @@
 @media screen and (max-width: 1024px) {
     
     .p_idaMovil{
+        display: block;
         margin-top: 150px;
         margin-bottom: -150px;
+        font-size: 20px;
+        font-weight: bold;
     }
     
     .fondoPaso1 {
