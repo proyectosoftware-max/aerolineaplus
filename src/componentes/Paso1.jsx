@@ -569,7 +569,7 @@ const Paso1 = () => {
                         </div>
                     ))
                 ) : (
-                    <p>No se encontraron vuelos</p>
+                    <p style={{visibility: 'hidden'}} >No se encontraron vuelos</p>
                 )}
 
                 {vuelos ? (
@@ -630,7 +630,7 @@ const Paso1 = () => {
                         </div>
                     ))
                 ) : (
-                    <p>No se encontraron vuelos</p>
+                    <p style={{visibility: 'hidden'}}>No se encontraron vuelos</p>
                 )}
 
                 {vuelos ? (
@@ -686,7 +686,7 @@ const Paso1 = () => {
                         </div>
                     ))
                 ) : (
-                    <p>No se encontraron vuelos</p>
+                    <p style={{visibility: 'hidden'}}>No se encontraron vuelos</p>
                 )}
 
                 {/* modal de basic, classic y flex */}
