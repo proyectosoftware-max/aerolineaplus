@@ -35,7 +35,7 @@
     border-radius: 20px !important;
 }
 
-.div_accordionMovil, .div_accordionMovilResumen {
+.div_accordionMovil, .div_accordionSemiMovil, .div_accordionMovilResumen {
     display: none;
 }
 
@@ -234,13 +234,11 @@
     display: none;
 }
 
-.div_accordionSemiMovil{
-    display: none !important;
-}
+
 
 @media screen and (max-width: 332px) {
     .div_accordionSemiMovil{
-        display: none !important;
+        display: none;
     }
     
     
@@ -309,6 +307,7 @@
 
     .p_idaMenuBar{
         font-size: 20px;
+        font-weight: bold;
         margin-top: 0px;
         margin-left: 5px;
     }
