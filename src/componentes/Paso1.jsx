@@ -569,7 +569,7 @@ const Paso1 = () => {
                         </div>
                     ))
                 ) : (
-                    <p style={{visibility: 'hidden'}} >No se encontraron vuelos</p>
+                    <p style={{ visibility: 'hidden' }} >No se encontraron vuelos</p>
                 )}
 
                 {vuelos ? (
@@ -593,31 +593,33 @@ const Paso1 = () => {
                                                     <label className='label_directoMovilSemiMovil' ><label className='letra_directoSemiMovil'>Directo </label>{vuelo.tiempo_vuelo}</label>
                                                 </label>
                                             </div>
-                                            <div className='div_contenedorVuelosSemiMovil'>
+                                        </div>
+                                        <div className='div_contenedorVuelosSemiMovil'>
 
-                                                <div className='div_origenMovilSemiMovil'>
-                                                    <label className='label_salidaMovilSemiMovil' >{vuelo.hora_salida}</label>
-                                                    <p className='p_codigoOrigenMovilSemiMovil'>{vuelo.codigo_origen}</p>
-                                                </div>
-
-
-                                                <div className='div_contenedorDatosVuelosMovilSemiMovil'>
-                                                <img src={img_barraMediana} alt="Avion" style={{ display: 'block', margin: '0 auto', width:'50%' }} />
-                                                </div>
-                                                <div className='div_destinoMovilSemiMovil'>
-                                                    <label className='label_llegadaMovilSemiMovil'>{vuelo.hora_llegada}</label>
-                                                    <p className='p_codigoDestinoMovilSemiMovil'>{vuelo.codigo_destino}</p>
-                                                </div>
+                                            <div className='div_origenMovilSemiMovil'>
+                                                <label className='label_salidaMovilSemiMovil' >{vuelo.hora_salida}</label>
+                                                <p className='p_codigoOrigenMovilSemiMovil'>{vuelo.codigo_origen}</p>
                                             </div>
 
 
+                                            <div className='div_contenedorDatosVuelosMovilSemiMovil'>
+                                                <img src={img_barraMediana} alt="Avion" style={{ display: 'block', margin: '0 auto', width: '50%' }} />
+                                            </div>
+                                            <div className='div_destinoMovilSemiMovil'>
+                                                <label className='label_llegadaMovilSemiMovil'>{vuelo.hora_llegada}</label>
+                                                <p className='p_codigoDestinoMovilSemiMovil'>{vuelo.codigo_destino}</p>
+                                            </div>
 
-                                            <div className='div_valorPasajeMovilSemiMovil'>
-                                                <label className='desdeSemiMovil'>Desde</label><br/>
+                                        </div>
+                                        <div className='div_valorPasajeMovilSemiMovil'>
+
+                                            <div className='div_contenedorValorPasaje'>
+
                                                 <label className='label_valorPasajeMovilSemiMovil'>
-                                                    COP
-                                                </label>
-                                                {`${formatPrice(selectedPrice)}`}
+                                                    <label className='desdeSemiMovil'>Desde</label><br />
+                                                    <label className='label_cop_MovilSemiMovil'>
+                                                        COP
+                                                    </label><label className='labelprecioSemiMovil'>{`${formatPrice(selectedPrice)}`}</label></label>
                                             </div>
                                         </div>
                                     </div>
@@ -630,7 +632,7 @@ const Paso1 = () => {
                         </div>
                     ))
                 ) : (
-                    <p style={{visibility: 'hidden'}}>No se encontraron vuelos</p>
+                    <p style={{ visibility: 'hidden' }}>No se encontraron vuelos</p>
                 )}
 
                 {vuelos ? (
@@ -686,7 +688,7 @@ const Paso1 = () => {
                         </div>
                     ))
                 ) : (
-                    <p style={{visibility: 'hidden'}}>No se encontraron vuelos</p>
+                    <p style={{ visibility: 'hidden' }}>No se encontraron vuelos</p>
                 )}
 
                 {/* modal de basic, classic y flex */}
