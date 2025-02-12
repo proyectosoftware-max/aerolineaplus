@@ -18,11 +18,11 @@ function App() {
         <Routes>
           <Route path='/' element={<Principal />} />
           <Route path='/paso1' element={<Paso1 />} />
-          <Route path='/resumen/:corigen/:cdestino/:ida/:vuelta/:tiempo/:precio/:salida/:llegada/:colorboton' element={<Resumen/>} />
-          <Route path='/paso2/:corigen/:cdestino/:ida/:vuelta/:tiempo/:precio/:salida/:llegada/:colorboton' element={<Paso2 />} />
-          <Route path='/paso3/:corigen/:cdestino/:ida/:vuelta/:tiempo/:precio/:salida/:llegada/:nombre/:apellido/:colorboton' element={<Paso3 />} />
-          <Route path='/paso4/:corigen/:cdestino/:ida/:vuelta/:tiempo/:precio/:salida/:llegada/:nombre/:apellido/:colorboton' element={<Paso4 />} />
-          <Route path='/paso5/:corigen/:cdestino/:ida/:vuelta/:tiempo/:precio/:salida/:llegada/:nombre/:apellido/:colorboton' element={<Paso5 />} />
+          <Route path='/resumen/:corigen/:cdestino/:ida/:vuelta/:tiempo/:precio/:salida/:llegada/:colorboton/:contaradulto/:adultopasajero' element={<Resumen/>} />
+          <Route path='/paso2/:corigen/:cdestino/:ida/:vuelta/:tiempo/:precio/:salida/:llegada/:colorboton/:contaradulto/:adultopasajero' element={<Paso2 />} />
+          <Route path='/paso3/:corigen/:cdestino/:ida/:vuelta/:tiempo/:precio/:salida/:llegada/:nombre/:apellido/:colorboton/:contaradulto/:adultopasajero' element={<Paso3 />} />
+          <Route path='/paso4/:corigen/:cdestino/:ida/:vuelta/:tiempo/:precio/:salida/:llegada/:nombre/:apellido/:colorboton/:contaradulto/:adultopasajero' element={<Paso4 />} />
+          <Route path='/paso5/:corigen/:cdestino/:ida/:vuelta/:tiempo/:precio/:salida/:llegada/:nombre/:apellido/:colorboton/:contaradulto/:adultopasajero' element={<Paso5 />} />
           <Route path='/prueba' element={<Prueba />} />
         </Routes>
       </BrowserRouter>

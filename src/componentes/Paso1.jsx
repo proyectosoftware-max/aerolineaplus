@@ -98,7 +98,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 const Paso1 = () => {
     const [selectedDate, setSelectedDate] = useState(new Date()); // Fecha seleccionada
-    const { setSharedData, fecha, setFecha, setSalida, setLlegada, origen, destino, setPrecio, colorboton, setColorBoton } = useContext(DataContext);
+    const { setSharedData, fecha, setFecha, setSalida, setLlegada, origen, destino, setPrecio, colorboton, setColorBoton, contarAdulto, adulto, setAdulto, pasajero, setPasajero } = useContext(DataContext);
     const [vuelos, setVuelos] = useState(null);
     const [vueloOrigen, setVueloOrigen] = useState('');
     const [vueloDestino, setVueloDestino] = useState('');
@@ -241,8 +241,9 @@ const Paso1 = () => {
         localStorage.setItem('salida', setSalida(vueloSalida));
         localStorage.setItem('llegada', setLlegada(vueloLlegada));
         localStorage.setItem('colorboton', setColorBoton('basic'));
-        const precioBasic = selectedPrice.toLocaleString('es-CO')
-        navigate(`/resumen/${origen}/${destino}/${vueloOrigen}/${vueloDestino}/${vueloTiempo}/${precioBasic}/${vueloSalida}/${vueloLlegada}/${'basic'}`);
+        localStorage.setItem('pasajero', setPasajero(pasajero));
+        const precioBasic = (parseFloat(selectedPrice) * contarAdulto).toLocaleString('es-CO')
+        navigate(`/resumen/${origen}/${destino}/${vueloOrigen}/${vueloDestino}/${vueloTiempo}/${precioBasic}/${vueloSalida}/${vueloLlegada}/${'basic'}/${contarAdulto}/${pasajero}`);
 
     };
 
@@ -250,8 +251,9 @@ const Paso1 = () => {
         localStorage.setItem('salida', setSalida(vueloSalida));
         localStorage.setItem('llegada', setLlegada(vueloLlegada));
         localStorage.setItem('colorboton', setColorBoton('classic'));
-        const precioClassic = (parseFloat(selectedPrice) + 113050).toLocaleString('es-CO')
-        navigate(`/resumen/${origen}/${destino}/${vueloOrigen}/${vueloDestino}/${vueloTiempo}/${precioClassic}/${vueloSalida}/${vueloLlegada}/${'classic'}`);
+        localStorage.setItem('pasajero', setPasajero(pasajero));
+        const precioClassic = ((parseFloat(selectedPrice) + 113050) * contarAdulto).toLocaleString('es-CO')
+        navigate(`/resumen/${origen}/${destino}/${vueloOrigen}/${vueloDestino}/${vueloTiempo}/${precioClassic}/${vueloSalida}/${vueloLlegada}/${'classic'}/${contarAdulto}/${pasajero}`);
 
     };
 
@@ -259,8 +261,9 @@ const Paso1 = () => {
         localStorage.setItem('salida', setSalida(vueloSalida));
         localStorage.setItem('llegada', setLlegada(vueloLlegada));
         localStorage.setItem('colorboton', setColorBoton('flex'));
-        const precioFlex = (parseFloat(selectedPrice) + 154700).toLocaleString('es-CO')
-        navigate(`/resumen/${origen}/${destino}/${vueloOrigen}/${vueloDestino}/${vueloTiempo}/${precioFlex}/${vueloSalida}/${vueloLlegada}/${'flex'}`);
+        localStorage.setItem('pasajero', setPasajero(pasajero));
+        const precioFlex = ((parseFloat(selectedPrice) + 154700) * contarAdulto).toLocaleString('es-CO')
+        navigate(`/resumen/${origen}/${destino}/${vueloOrigen}/${vueloDestino}/${vueloTiempo}/${precioFlex}/${vueloSalida}/${vueloLlegada}/${'flex'}/${contarAdulto}/${pasajero}`);
 
     };
 
@@ -268,24 +271,36 @@ const Paso1 = () => {
         localStorage.setItem('salida', setSalida(vueloSalida));
         localStorage.setItem('llegada', setLlegada(vueloLlegada));
         localStorage.setItem('colorboton', setColorBoton('basic'));
-        const precioBasic = selectedPrice.toLocaleString('es-CO')
-        navigate(`/resumen/${origen}/${destino}/${vueloOrigen}/${vueloDestino}/${vueloTiempo}/${precioBasic}/${vueloSalida}/${vueloLlegada}/${'basic'}`);
+        localStorage.setItem('adulto', setAdulto(adulto));
+        const precioBasic = (parseFloat(selectedPrice) * contarAdulto).toLocaleString('es-CO')
+        navigate(`/resumen/${origen}/${destino}/${vueloOrigen}/${vueloDestino}/${vueloTiempo}/${precioBasic}/${vueloSalida}/${vueloLlegada}/${'basic'}/${contarAdulto}/${adulto}`);
     }
 
     const clickClassic = () => {
         localStorage.setItem('salida', setSalida(vueloSalida));
         localStorage.setItem('llegada', setLlegada(vueloLlegada));
         localStorage.setItem('colorboton', setColorBoton('classic'));
-        const precioClassic = (parseFloat(selectedPrice) + 113050).toLocaleString('es-CO')
-        navigate(`/resumen/${origen}/${destino}/${vueloOrigen}/${vueloDestino}/${vueloTiempo}/${precioClassic}/${vueloSalida}/${vueloLlegada}/${'classic'}`);
+        localStorage.setItem('adulto', setAdulto(adulto));
+        const precioClassic = ((parseFloat(selectedPrice) + 113050) * contarAdulto ).toLocaleString('es-CO')
+        navigate(`/resumen/${origen}/${destino}/${vueloOrigen}/${vueloDestino}/${vueloTiempo}/${precioClassic}/${vueloSalida}/${vueloLlegada}/${'classic'}/${contarAdulto}/${adulto}`);
+    }
+
+    const clickFlexModal = () => {
+        localStorage.setItem('salida', setSalida(vueloSalida));
+        localStorage.setItem('llegada', setLlegada(vueloLlegada));
+        localStorage.setItem('colorboton', setColorBoton('flex'));
+        localStorage.setItem('adulto', setAdulto(adulto));
+        const precioFlex = ((parseFloat(selectedPrice) + 154700) * contarAdulto ).toLocaleString('es-CO')
+        navigate(`/resumen/${origen}/${destino}/${vueloOrigen}/${vueloDestino}/${vueloTiempo}/${precioFlex}/${vueloSalida}/${vueloLlegada}/${'flex'}/${contarAdulto}/${adulto}`);
     }
 
     const clickFlex = (vuelo) => {
         localStorage.setItem('salida', setSalida(vuelo.hora_salida));
         localStorage.setItem('llegada', setLlegada(vuelo.hora_salida));
         localStorage.setItem('colorboton', setColorBoton('flex'));
-        const precioFlex = (parseFloat(selectedPrice) + 154700).toLocaleString('es-CO')
-        navigate(`/resumen/${origen}/${destino}/${vuelo.codigo_origen}/${vuelo.codigo_destino}/${vuelo.tiempo_vuelo}/${precioFlex}/${vuelo.hora_salida}/${vuelo.hora_llegada}/${'flex'}`);
+        localStorage.setItem('adulto', setAdulto(adulto));
+        const precioFlex = ((parseFloat(selectedPrice) + 154700) * contarAdulto ).toLocaleString('es-CO')
+        navigate(`/resumen/${origen}/${destino}/${vuelo.codigo_origen}/${vuelo.codigo_destino}/${vuelo.tiempo_vuelo}/${precioFlex}/${vuelo.hora_salida}/${vuelo.hora_llegada}/${'flex'}/${contarAdulto}/${adulto}`);
     }
 
     useEffect(() => {
@@ -312,6 +327,9 @@ const Paso1 = () => {
     useEffect(() => {
         localStorage.setItem('colorboton', setColorBoton(colorboton));
     }, [colorboton]);
+
+    
+    
 
 
     const change = () => {
@@ -403,7 +421,7 @@ const Paso1 = () => {
                 </div>
 
                 <div className='div_ordenar_por'>
-                    <label className='label_ordenar_por'>Ordenar por:</label>
+                    <label className='label_ordenar_por'>Ordenar por:{adulto}</label>
                     <button className='boton_mejor_precio'>Mejor precio</button>
                     <button className='boton_vuelos_directos'>Vuelos directos</button>
                 </div>
@@ -863,15 +881,8 @@ const Paso1 = () => {
 
                         </Card>
 
-
-
-
-
                     </DialogContent>
                 </Dialog>
-
-
-
 
                 <div className='div_accordion'>
                     <div>
@@ -1094,7 +1105,7 @@ const Paso1 = () => {
                                 fontSize: '17px',
                                 fontWeight: 'bold',
                                 float: 'right'
-                            }} onClick={clickFlex} >¡Quiero flex!</button>
+                            }} onClick={clickFlexModal} >¡Quiero flex!</button>
                         </DialogContent>
                     </Dialog>
                 </React.Fragment>

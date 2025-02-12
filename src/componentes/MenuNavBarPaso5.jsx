@@ -79,7 +79,7 @@ const MenuNavBarPaso5 = () => {
   const [ciudadOrigen, setCiudadOrigen] = useState("Barranquilla");
   const [ciudadDestino, setCiudadDestino] = useState("Medellín");
   const [scrolled, setScrolled] = useState(false);
-  const { sharedData, fecha, setFecha, salida, llegada, setSalida, setLlegada, origen, destino, setOrigen, setDestino, precio, colorboton, setColorBoton } = useContext(DataContext);
+  const { sharedData, fecha, setFecha, salida, llegada, setSalida, setLlegada, origen, destino, setOrigen, setDestino, precio, colorboton, setColorBoton, contarAdulto, setContarAdulto, adulto, setAdulto, pasajero, setPasajero } = useContext(DataContext);
   const [open, setOpen] = useState(false);
   const [expanded, setExpanded] = useState(false); // Control del estado de la flecha
   const [abrirModal, setAbrirModal] = useState(false);
@@ -489,6 +489,18 @@ const MenuNavBarPaso5 = () => {
     localStorage.setItem('colorboton', setColorBoton(colorboton));
   }, [colorboton]);
 
+  useEffect(() => {
+    localStorage.setItem('contarAdulto', setContarAdulto(contarAdulto));
+  }, [contarAdulto]);
+
+  useEffect(() => {
+    localStorage.setItem('adulto', setAdulto(adulto));
+  }, [adulto]);
+
+  useEffect(() => {
+    localStorage.setItem('pasajero', setPasajero(pasajero));
+  }, [pasajero]);
+
   return (
     <>
       <div
@@ -512,7 +524,7 @@ const MenuNavBarPaso5 = () => {
                 <div className="nav2" >
                   <Nav>
                     <Navbar.Text className='fecha'><FlightTakeoffIcon sx={{ fontSize: '16px' }} /><label style={{ marginLeft: '5px' }}>{dayjs(fecha).format('D\nMMMM\nYYYY')}</label></Navbar.Text>
-                    <Navbar.Text className='adulto' ><GroupAddIcon sx={{ fontSize: '16px' }} /><label style={{ marginLeft: '5px' }}>1 Adulto</label></Navbar.Text>
+                    <Navbar.Text className='adulto' ><GroupAddIcon sx={{ fontSize: '16px' }} /><label style={{ marginLeft: '5px' }}>{contarAdulto} {adulto}</label></Navbar.Text>
                   </Nav>
                 </div>
               </Nav>
@@ -589,7 +601,7 @@ const MenuNavBarPaso5 = () => {
                 <div className="nav2" >
                   <Nav>
                     <Navbar.Text className='fecha'><FlightTakeoffIcon sx={{ fontSize: '16px' }} /><label style={{ marginLeft: '5px' }}>{dayjs(fecha).format('D\nMMMM\nYYYY')}</label></Navbar.Text>
-                    <Navbar.Text className='adulto' ><GroupAddIcon sx={{ fontSize: '16px' }} /><label style={{ marginLeft: '5px' }}>1 Adulto</label></Navbar.Text>
+                    <Navbar.Text className='adulto' ><GroupAddIcon sx={{ fontSize: '16px' }} /><label style={{ marginLeft: '5px' }}>{contarAdulto} {adulto}</label></Navbar.Text>
                   </Nav>
                 </div>
               </Nav>
@@ -659,7 +671,7 @@ const MenuNavBarPaso5 = () => {
           </label>
           <div className='div_precioMovil' >
             <div className='div_contenidoPrecioMovil'>
-            <ShoppingCartIcon sx={{ fontSize: '16px', marginTop: '-9px', color:'white' }} /><label className='label_copMovil' >COP </label> <label className='label_cero'>{precio}</label></div>
+            <ShoppingCartIcon sx={{ fontSize: '16px', marginTop: '-9px', color:'white' }} /><label className='label_copMovil' >COP </label> <label className='label_ceroMovil'>{precio}</label></div>
             </div>
         </div>
         
@@ -667,7 +679,7 @@ const MenuNavBarPaso5 = () => {
           <p className='p_idaMenuBar'><FlightTakeoffIcon className='avion' sx={{ fontSize: '25px' }} /><label className='letra_ida' style={{ marginLeft: '5px' }}>Ida:</label> {origen} <label style={{ marginLeft: '5px', marginRight: '8px' }}>a</label>{destino}</p>
           <div className='div_movil'>
             <div className='fecha'><FlightTakeoffIcon sx={{ fontSize: '15px' }} /><label style={{ marginLeft: '5px' }}>{dayjs(fecha).format('D\nMMMM\nYYYY')}</label></div>
-            <div className='adulto' ><GroupAddIcon sx={{ fontSize: '15px' }} /><label style={{ marginLeft: '5px' }}>1 Pasajero</label></div>
+            <div className='adulto' ><GroupAddIcon sx={{ fontSize: '15px' }} /><label style={{ marginLeft: '5px' }}>{contarAdulto} {pasajero}</label></div>
           </div>
         </div>
       </Navbar>
@@ -739,7 +751,7 @@ const MenuNavBarPaso5 = () => {
             <div style={{ marginTop: '5px', marginLeft: '5px', marginRight: '5px' }}><img src={barraMediana} /></div>
             <div style={{ fontSize: '22px', fontWeight: 'bold' }}>{llegada}</div>
           </div>
-          <p style={{ marginTop: '30px' }}>1 Adulto</p>
+          <p style={{ marginTop: '30px' }}>{contarAdulto} {adulto}</p>
           <div style={{ display: 'flex', marginTop: '50px' }}>
             <div style={{ fontFamily: 'revert', fontSize: '22px', fontWeight: 'bold', marginRight: '130px' }}>Total a pagar</div>
             <div style={{ fontSize: '22px', fontWeight: 'bold' }}><label style={{ marginRight: '5px' }}>COP</label>{precio}</div>

@@ -46,8 +46,8 @@ const formatDate = (date) => {
 
 const Paso5 = () => {
     
-    const { setSharedData, selectedDate, fecha, setFecha, origen, setSalida, setLlegada, destino, setPrecio, setColorBoton } = useContext(DataContext);
-    const { ida, vuelta, precio, salida, llegada, tiempo, nombre, apellido, colorboton } = useParams();
+    const { setSharedData, selectedDate, fecha, setFecha, origen, setSalida, setLlegada, destino, setPrecio, setColorBoton, setContarAdulto, adulto, setAdulto, pasajero, setPasajero } = useContext(DataContext);
+    const { ida, vuelta, precio, salida, llegada, tiempo, nombre, apellido, colorboton, contaradulto, adultopasajero } = useParams();
 
     useEffect(() => {
         localStorage.setItem('fecha', setFecha(selectedDate));
@@ -69,6 +69,19 @@ const Paso5 = () => {
         localStorage.setItem('colorboton', setColorBoton(colorboton));
       }, [colorboton]);
 
+      useEffect(() => {
+        localStorage.setItem('contarAdulto', setContarAdulto(contaradulto));
+      }, [contaradulto]);
+
+      useEffect(() => {
+        localStorage.setItem('adulto', setAdulto(adultopasajero));
+      }, [adultopasajero]);
+
+      useEffect(() => {
+        localStorage.setItem('pasajero', setPasajero(adultopasajero));
+      }, [adultopasajero]);
+
+
     const enviarBanco = () => {
         window.location.href = `https://bancoaerolinea.onrender.com/?nombre=${encodeURIComponent(nombre)}&apellido=${encodeURIComponent(apellido)}`;
 
@@ -84,8 +97,8 @@ const Paso5 = () => {
                     <label className="titulo">Pagar y confirmar reserva</label>
                     <div className="div_resumen">
                         <p className="resumenCompra">Resumen de compra</p>
-                        <label className="label_total">Total a pagar</label>
-                        <label className="label_precio">${precio}<label className="label_cop_pagos">COP</label></label>
+                        <label className="label_total">Total a pagar:</label>
+                        <label className="labelPrecio">${precio}<label className="label_cop_pagos">COP</label></label>
                     </div>
 
                     <div className="div_seleccion">

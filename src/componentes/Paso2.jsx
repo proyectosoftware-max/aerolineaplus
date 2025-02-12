@@ -97,24 +97,34 @@ const formatDate = (date) => {
 
 
 const Pasos2 = () => {
-    const { setSharedData, fecha, setFecha, origen, setSalida, setLlegada, destino, setPrecio, setColorBoton } = useContext(DataContext);
-    const { ida, vuelta, precio, salida, llegada, tiempo, nombre, apellido, colorboton } = useParams();
+    const { setSharedData, fecha, setFecha, origen, setSalida, setLlegada, destino, setPrecio, setColorBoton, setContarAdulto, adulto, setAdulto, pasajero, setPasajero } = useContext(DataContext);
+    const { ida, vuelta, precio, salida, llegada, tiempo, nombre, apellido, colorboton, contaradulto, adultopasajero } = useParams();
     const { selectedDate } = useContext(DataContext);
     const [nombrePasajero, setNombrePasajero] = useState('Pasajero');
     const [apellidoPasajero, setApellidoPasajero] = useState('');
+    const [nombrePasajeroSecundario, setNombrePasajeroSecundario] = useState('Pasajero');
+    const [apellidoPasajeroSecundario, setApellidoPasajeroSecundario] = useState('');
     const [genero, setGenero] = useState('');
+    const [generoSecundario, setGeneroSecundario] = useState('');
     const [nombreInicial, setNombreInicial] = useState('');
     const [apellidoInicial, setApellidoInicial] = useState('');
+    const [nombreInicialSecundario, setNombreInicialSecundario] = useState('');
+    const [apellidoInicialSecundario, setApellidoInicialSecundario] = useState('');
     const [nacionalidad, setNacionalidad] = useState('');
+    const [nacionalidadSecundario, setNacionalidadSecundario] = useState('');
     const [dia, setDia] = useState('Dia');
     const [mes, setMes] = useState('Mes');
     const [anual, setAnual] = useState('Año');
+    const [diaSecundario, setDiaSecundario] = useState('Dia');
+    const [mesSecundario, setMesSecundario] = useState('Mes');
+    const [anualSecundario, setAnualSecundario] = useState('Año');
     const [prefijo, setPrefijo] = useState('');
     const [correo, setCorreo] = useState('');
     const [telefono, setTelefono] = useState('');
     const [value, setValue] = useState(0);
     const [paisIndicativo, setPaisIndicativo] = useState('Nacionalidad*');
     const [nombreAdulto, setNombreAdulto] = useState('Adulto');
+    const [nombreAdultoSecundario, setNombreAdultoSecundario] = useState('Adulto');
     const [activar, setActivar] = useState(false);
     const [activarTodo, setActivarTodo] = useState(false);
     const [lifes, setLifes] = useState('lifemiles');
@@ -122,8 +132,11 @@ const Pasos2 = () => {
     const [checkservicios, setCheckservicios] = useState(false);
     const [checkAceptar, setCheckAceptar] = useState(false);
     const [checkRecibir, setCheckRecibir] = useState(false);
+    const [contarAdultoMostrar, setContarAdultoMostrar] = useState(contaradulto);
     const [errorNombre, setErrorNombre] = useState(false);
     const [errorApellido, setErrorApellido] = useState(false);
+    const [errorNombreSecundario, setErrorNombreSecundario] = useState(false);
+    const [errorApellidoSecundario, setErrorApellidoSecundario] = useState(false);
     const [errorCorreo, setErrorCorreo] = useState(false);
     const [errorTelefono, setErrorTelefono] = useState(false);
     const [open, setOpen] = useState(false);
@@ -153,6 +166,18 @@ const Pasos2 = () => {
         localStorage.setItem('colorboton', setColorBoton(colorboton));
     }, [colorboton]);
 
+    useEffect(() => {
+        localStorage.setItem('contarAdulto', setContarAdulto(contaradulto));
+      }, [contaradulto]);
+
+      useEffect(() => {
+        localStorage.setItem('adulto', setAdulto(adultopasajero));
+      }, [adultopasajero]);
+
+      useEffect(() => {
+        localStorage.setItem('pasajero', setPasajero(adultopasajero));
+      }, [adultopasajero]);
+      
 
 
     useEffect(() => {
@@ -204,6 +229,10 @@ const Pasos2 = () => {
         setGenero(e.target.value);
     }
 
+    const changeGeneroSecundario = (e) => {
+        setGeneroSecundario(e.target.value);
+    }
+
     const changeNombre = (e) => {
         setNombrePasajero(e.target.value);
         setNombreAdulto(e.target.value);
@@ -227,8 +256,35 @@ const Pasos2 = () => {
         }
     }
 
+    const changeNombreSecundario = (e) => {
+        setNombrePasajeroSecundario(e.target.value);
+        setNombreAdultoSecundario(e.target.value);
+        setNombreInicialSecundario(e.target.value);
+
+        if (e.target.value.trim() === '') {
+            setErrorNombreSecundario(true);
+        } else {
+            setErrorNombreSecundario(false);
+        }
+    }
+
+    const changeApellidoSecundario = (e) => {
+        setApellidoPasajeroSecundario(e.target.value);
+        setApellidoInicialSecundario(e.target.value);
+
+        if (e.target.value.trim() === '') {
+            setErrorApellidoSecundario(true);
+        } else {
+            setErrorApellidoSecundario(false);
+        }
+    }
+
     const changeNacionalidad = (e) => {
         setNacionalidad(e.target.value);
+    }
+
+    const changeNacionalidadSecundario = (e) => {
+        setNacionalidadSecundario(e.target.value);
     }
 
     const changeDia = (e) => {
@@ -242,6 +298,19 @@ const Pasos2 = () => {
 
     const changeAnual = (e) => {
         setAnual(e.target.value);
+    }
+
+    const changeDiaSecundario = (e) => {
+        setDiaSecundario(e.target.value);
+    }
+
+    const changeMesSecundario = (e) => {
+        setMesSecundario(e.target.value);
+    }
+
+
+    const changeAnualSecundario = (e) => {
+        setAnualSecundario(e.target.value);
     }
 
     const changePaisIndicativo = (event) => {
@@ -311,7 +380,7 @@ const Pasos2 = () => {
         if (!nombreInicial.trim() || !apellidoInicial.trim() || !genero || !dia || !mes || !anual || !nacionalidad || !prefijo || !telefono.trim() || !correo.trim()) {
             alert('Debe completar todos los campos');
         } else {
-            navigate(`/paso3/${origen}/${destino}/${ida}/${vuelta}/${tiempo}/${precio}/${salida}/${llegada}/${nombreInicial}/${apellidoInicial}/${colorboton}`);
+            navigate(`/paso3/${origen}/${destino}/${ida}/${vuelta}/${tiempo}/${precio}/${salida}/${llegada}/${nombreInicial}/${apellidoInicial}/${colorboton}/${contaradulto}/${adultopasajero}`);
         }
 
     }
@@ -373,7 +442,7 @@ const Pasos2 = () => {
             <div className="paso2"  >
                 <MenuNavBarPasos />
                 <div className='textoPasajero'>
-                    <label className='label_pasajero' >Pasajero</label><br />
+                    <label className='label_pasajero' >Pasajeros</label><br />
                     <label>Ingresa el nombre y primer apellido (de cada pasajero) tal y como aparecen en el pasaporte o documento de identidad.</label><br />
                 </div>
                 <div className="div_pasajero">
@@ -1148,6 +1217,781 @@ const Pasos2 = () => {
                 </div>
 
             </div>
+
+            {contaradulto == 2 && (
+                <div className="div_pasajero">
+                <label className="label_adulto">Adulto2:</label><label className="textoNombreApellido">{`${nombreInicialSecundario} ${apellidoInicialSecundario}`}</label><br />
+                <div className="PrimerFormEscritorio">
+                    <FormControl variant="standard" style={{ marginTop: '-1px', marginRight: '15px' }}>
+                        <InputLabel
+                            id="select-label"
+                            sx={{
+                                transform: generoSecundario ? 'translate(14px, 20px) scale(0.85)' : 'translate(18px, 30px) scale(1.1)',
+                                color: generoSecundario ? 'YellowGreen' : 'black',
+                                fontWeight: generoSecundario ? 'bold' : 'normal',
+                                '&.Mui-focused': {
+                                    marginBottom: '5px',
+                                    transform: 'translate(14px, 20px) scale(0.85)',
+                                    color: 'YellowGreen',
+                                    fontWeight: 'bold',
+                                },
+                                '&:not(.Mui-focused)': {
+                                    color: 'black', // Texto en negro cuando no está enfocado
+                                    fontWeight: 'normal',
+                                },
+                            }}
+                        >
+                            Genero*
+                        </InputLabel>
+                        <Select
+                            labelId="select-label"
+                            id="demo-simple-select"
+                            value={generoSecundario}
+                            onChange={changeGeneroSecundario}
+
+                            disableUnderline
+
+                            MenuProps={{
+                                disableScrollLock: true, // Permite que el scroll de la página continúe
+                                PaperProps: {
+                                    sx: {
+                                        maxHeight: 200,
+                                        overflow: 'auto',
+                                    },
+                                },
+                            }}
+
+                            sx={{
+                                width: '150px',
+                                border: '1px solid rgba(0, 0, 0, 0.527)', // Color del borde inicial
+                                borderRadius: '4px', // Bordes redondeados
+                                padding: '5px 5px', // Ajusta el padding del select
+                                '&:hover': {
+                                    borderColor: 'rgb(9, 197, 9)', // Color del borde al hacer hover
+                                },
+                                '&.Mui-focused': {
+                                    borderColor: 'rgb(9, 197, 9)', // Color del borde al hacer focus
+                                    color: 'black',
+                                    fontWeight: 'bold',
+                                },
+                                '& .MuiSelect-select': {
+                                    padding: '12px', // Ajusta el padding del select
+                                    fontWeight: 'bold', // Texto en negrita cuando hay contenido
+                                    color: 'black', // Texto en negro cuando tiene contenido
+                                },
+                            }}
+                        >
+                            <MenuItem value="">
+
+                            </MenuItem>
+                            <MenuItem value={1}>Masculino</MenuItem>
+                            <MenuItem value={2}>Femenino</MenuItem>
+                            <MenuItem value={3}>Otro</MenuItem>
+                        </Select>
+                    </FormControl>
+
+                    <TextField
+                        label="Nombre(s)*"
+                        variant="standard"
+                        onChange={changeNombreSecundario}
+                        value={nombreInicialSecundario}
+                        InputProps={{
+                            disableUnderline: true, // Elimina la línea inferior
+                            sx: {
+                                border: '1px solid', // Añade un borde alrededor
+                                borderColor: 'rgba(0, 0, 0, 0.527)', // Color del borde inicial
+                                borderRadius: '4px', // Bordes redondeados
+                                padding: '12px 12px', // Ajusta el padding del input
+                                '&:hover': {
+                                    borderColor: 'rgb(9, 197, 9)', // Color del borde al hacer hover
+                                },
+                                '&.Mui-focused': {
+                                    border: '2px solid rgb(9, 197, 9)',
+                                    borderColor: 'rgb(9, 197, 9)', // Color del borde al hacer focus
+                                    color: 'black',
+                                    fontWeight: 'bold',
+                                },
+
+                            },
+                        }}
+                        InputLabelProps={{
+                            sx: {
+                                transform: 'translate(18px, 30px) scale(1.1)', // Posición inicial del label
+                                color: 'black', // Color del label
+                                '&.Mui-focused': {
+                                    marginBottom: '5px',
+                                    transform: 'translate(14px, 20px) scale(0.85)', // Mantiene el label dentro del borde al enfocar
+                                    color: 'YellowGreen', // Cambia el color del label cuando está enfocado
+                                    fontWeight: 'bold'
+                                },
+                                // Mantiene el label en la posición escalada si hay texto
+                                '&.MuiFormLabel-filled': {
+                                    transform: 'translate(14px, 20px) scale(0.85)', // Mantiene el label arriba si hay texto
+                                    color: 'YellowGreen', // Color cuando está lleno
+                                },
+                                '&:not(.Mui-focused)': {
+                                    color: 'black', // Texto en negro cuando no está enfocado
+
+                                },
+                            },
+                        }}
+
+                        sx={{
+                            width: '440px',
+                            marginRight: '15px',
+                            '&.Mui-focused .MuiInputBase-input': {
+                                color: 'black', // Texto en negro cuando se pierde el foco
+                                fontWeight: 'bold',
+                            },
+                            '&.Mui-filled .MuiInputBase-input': {
+                                fontWeight: 'bold', // Texto en negrita cuando hay contenido
+                                color: 'black', // Texto en negro
+                            },
+                            '&:not(.Mui-focused) .MuiInputBase-input': {
+                                color: 'black', // Texto en negro cuando no está enfocado
+                                fontWeight: 'bold',
+                            },
+                        }}
+                    />
+
+
+                    <TextField
+                        label="Apellido"
+                        variant="standard"
+                        onChange={changeApellidoSecundario}
+                        value={apellidoInicialSecundario}
+                        InputProps={{
+                            disableUnderline: true, // Elimina la línea inferior
+                            sx: {
+                                border: '1px solid', // Añade un borde alrededor
+                                borderColor: 'rgba(0, 0, 0, 0.527)', // Color del borde inicial
+                                borderRadius: '4px', // Bordes redondeados
+                                padding: '12px 12px', // Ajusta el padding del input
+                                '&:hover': {
+                                    borderColor: 'rgb(9, 197, 9)', // Color del borde al hacer hover
+                                },
+                                '&.Mui-focused': {
+                                    border: '2px solid rgb(9, 197, 9)',
+                                    borderColor: 'rgb(9, 197, 9)', // Color del borde al hacer focus
+                                    color: 'black',
+                                    fontWeight: 'bold',
+                                },
+
+                            },
+                        }}
+                        InputLabelProps={{
+                            sx: {
+                                transform: 'translate(18px, 30px) scale(1.1)', // Posición inicial del label
+                                color: 'black', // Color del label
+                                '&.Mui-focused': {
+                                    marginBottom: '5px',
+                                    transform: 'translate(14px, 20px) scale(0.85)', // Mantiene el label dentro del borde al enfocar
+                                    color: 'YellowGreen', // Cambia el color del label cuando está enfocado
+                                    fontWeight: 'bold'
+                                },
+                                // Mantiene el label en la posición escalada si hay texto
+                                '&.MuiFormLabel-filled': {
+                                    transform: 'translate(14px, 20px) scale(0.85)', // Mantiene el label arriba si hay texto
+                                    color: 'YellowGreen', // Color cuando está lleno
+                                },
+                                '&:not(.Mui-focused)': {
+                                    color: 'black', // Texto en negro cuando no está enfocado
+
+                                },
+                            },
+                        }}
+
+                        sx={{
+                            width: '440px',
+                            '&.Mui-focused .MuiInputBase-input': {
+                                color: 'black', // Texto en negro cuando se pierde el foco
+                                fontWeight: 'bold',
+                            },
+                            '&.Mui-filled .MuiInputBase-input': {
+                                fontWeight: 'bold', // Texto en negrita cuando hay contenido
+                                color: 'black', // Texto en negro
+                            },
+                            '&:not(.Mui-focused) .MuiInputBase-input': {
+                                color: 'black', // Texto en negro cuando no está enfocado
+                                fontWeight: 'bold',
+                            },
+                        }}
+                    />
+
+                    <div style={{ display: 'flex' }}>
+                        <div style={{ display: 'flex', border: '1px solid gray', width: '430px', height: '60px', marginTop: '15px', borderRadius: '10px' }}>
+                            <FormControl sx={{ m: 1, minWidth: 120 }}>
+
+
+                                <Select
+                                    labelId="demo-select-small-label"
+                                    id="demo-select-small"
+                                    value={diaSecundario}
+                                    size="small"
+                                    onChange={changeDiaSecundario}
+                                    MenuProps={{
+                                        disableScrollLock: true, // Permite que el scroll de la página continúe
+                                        PaperProps: {
+                                            sx: {
+                                                maxHeight: 200,
+                                                overflow: 'auto',
+                                            },
+                                        },
+                                    }}
+                                >
+                                    <MenuItem value="Dia" disabled sx={{ visibility: 'hidden', height: '0px' }}>
+                                        Dia
+                                    </MenuItem>
+                                    {dias.map((dia) => (
+                                        <MenuItem value={dia}>{dia}</MenuItem>
+                                    ))}
+
+
+                                </Select>
+
+                            </FormControl>
+
+                            <FormControl sx={{ m: 1, minWidth: 120 }}>
+
+
+                                <Select
+                                    labelId="demo-select-small-label"
+                                    id="demo-select-small"
+                                    value={mesSecundario}
+                                    size="small"
+                                    onChange={changeMesSecundario}
+                                    MenuProps={{
+                                        disableScrollLock: true, // Permite que el scroll de la página continúe
+                                        PaperProps: {
+                                            sx: {
+                                                maxHeight: 200,
+                                                overflow: 'auto',
+                                            },
+                                        },
+                                    }}
+                                >
+                                    <MenuItem value="Mes" disabled sx={{ visibility: 'hidden', height: '0px' }}>
+                                        Mes
+                                    </MenuItem>
+                                    {meses.map((mes) => (
+                                        <MenuItem value={mes}>{mes}</MenuItem>
+                                    ))}
+                                </Select>
+
+
+                            </FormControl>
+
+                            <FormControl sx={{ m: 1, minWidth: 120 }}>
+
+                                <Select
+                                    labelId="demo-select-small-label"
+                                    id="demo-select-small"
+                                    value={anualSecundario}
+                                    size="small"
+                                    onChange={changeAnualSecundario}
+                                    MenuProps={{
+                                        disableScrollLock: true, // Permite que el scroll de la página continúe
+                                        PaperProps: {
+                                            sx: {
+                                                maxHeight: 200,
+                                                overflow: 'auto',
+                                            },
+                                        },
+                                    }}
+                                >
+                                    <MenuItem value="Año" disabled sx={{ visibility: 'hidden', height: '0px' }}>
+                                        Año
+                                    </MenuItem>
+                                    {años.map((año) => (
+                                        <MenuItem value={año}>{año}</MenuItem>
+                                    ))}
+                                </Select>
+
+
+                            </FormControl>
+                        </div>
+
+                        <FormControl variant="standard" style={{ marginTop: '-1px', marginLeft: '15px' }}>
+                            <InputLabel
+                                id="select-label"
+                                sx={{
+                                    transform: nacionalidadSecundario ? 'translate(14px, 20px) scale(0.85)' : 'translate(18px, 30px) scale(1.1)',
+                                    color: nacionalidadSecundario ? 'YellowGreen' : 'black',
+                                    fontWeight: nacionalidadSecundario ? 'bold' : 'normal',
+                                    '&.Mui-focused': {
+                                        marginBottom: '5px',
+                                        transform: 'translate(14px, 20px) scale(0.85)',
+                                        color: 'YellowGreen',
+                                        fontWeight: 'bold',
+                                    },
+                                    '&:not(.Mui-focused)': {
+                                        color: 'black', // Texto en negro cuando no está enfocado
+                                        fontWeight: 'normal',
+
+                                    },
+                                }}
+                            >
+                                Nacionalidad*
+                            </InputLabel>
+                            <Select
+                                labelId="select-label"
+                                id="demo-simple-select"
+                                value={nacionalidadSecundario}
+                                onChange={changeNacionalidadSecundario}
+
+                                disableUnderline
+
+                                MenuProps={{
+                                    disableScrollLock: true, // Permite que el scroll de la página continúe
+                                    PaperProps: {
+                                        sx: {
+                                            maxHeight: 200,
+                                            overflow: 'auto',
+                                        },
+                                    },
+                                }}
+
+                                sx={{
+                                    width: '200px',
+                                    border: '1px solid rgba(0, 0, 0, 0.527)', // Color del borde inicial
+                                    borderRadius: '4px', // Bordes redondeados
+                                    padding: '5px 5px', // Ajusta el padding del select
+                                    '&:hover': {
+                                        borderColor: 'rgb(9, 197, 9)', // Color del borde al hacer hover
+                                    },
+                                    '&.Mui-focused': {
+                                        borderColor: 'rgb(9, 197, 9)', // Color del borde al hacer focus
+                                        color: 'black',
+                                        fontWeight: 'bold',
+                                    },
+                                    '& .MuiSelect-select': {
+                                        padding: '12px', // Ajusta el padding del select
+                                        fontWeight: 'bold', // Texto en negrita cuando hay contenido
+                                        color: 'black', // Texto en negro cuando tiene contenido
+                                    },
+                                }}
+                            >
+
+                                {codigosPaises.map((pais, index) => (
+                                    <MenuItem key={index} value={`${pais.nombre}`}
+
+                                        sx={{
+                                            '&:hover': {
+                                                color: 'black', // Cambiar el color de la letra al pasar el cursor
+                                            }
+                                        }}
+
+                                    >
+                                        {`${pais.nombre}`}
+                                    </MenuItem>
+                                ))}
+                            </Select>
+                        </FormControl>
+
+                    </div>
+
+                </div>
+
+                <div className="SegundoFormMovil">
+                <div style={{ display: 'flex' }}>
+                    <FormControl variant="standard" style={{ marginTop: '-1px', marginRight: '15px', width: '100%' }}>
+                        
+                            <InputLabel
+                                id="select-label"
+                                sx={{
+                                    fontSize: '15px',
+                                    transform: generoSecundario ? 'translate(14px, 20px) scale(0.85)' : 'translate(18px, 30px) scale(1.1)',
+                                    color: generoSecundario ? 'YellowGreen' : 'black',
+                                    fontWeight: generoSecundario ? 'bold' : 'normal',
+                                    '&.Mui-focused': {
+                                        marginBottom: '5px',
+                                        transform: 'translate(14px, 20px) scale(0.85)',
+                                        color: 'YellowGreen',
+                                        fontWeight: 'bold',
+                                    },
+                                    '&:not(.Mui-focused)': {
+                                        color: 'black', // Texto en negro cuando no está enfocado
+                                        fontWeight: 'normal',
+                                    },
+                                }}
+                            >
+                                Genero*
+                            </InputLabel>
+                            <Select
+                                labelId="select-label"
+                                id="demo-simple-select"
+                                value={generoSecundario}
+                                onChange={changeGeneroSecundario}
+
+                                disableUnderline
+
+                                MenuProps={{
+                                    disableScrollLock: true, // Permite que el scroll de la página continúe
+                                    PaperProps: {
+                                        sx: {
+                                            maxHeight: 200,
+                                            overflow: 'auto',
+                                        },
+                                    },
+                                }}
+
+                                sx={{
+                                    width: '100%',
+                                    border: '1px solid rgba(0, 0, 0, 0.527)', // Color del borde inicial
+                                    borderRadius: '4px', // Bordes redondeados
+                                    padding: '5px 5px', // Ajusta el padding del select
+                                    '&:hover': {
+                                        borderColor: 'rgb(9, 197, 9)', // Color del borde al hacer hover
+                                    },
+                                    '&.Mui-focused': {
+                                        borderColor: 'rgb(9, 197, 9)', // Color del borde al hacer focus
+                                        color: 'black',
+                                        fontWeight: 'bold',
+                                    },
+                                    '& .MuiSelect-select': {
+                                        padding: '9px', // Ajusta el padding del select
+                                        fontWeight: 'bold', // Texto en negrita cuando hay contenido
+                                        color: 'black', // Texto en negro cuando tiene contenido
+                                    },
+                                }}
+                            >
+                                <MenuItem value="">
+
+                                </MenuItem>
+                                <MenuItem value={1}>Masculino</MenuItem>
+                                <MenuItem value={2}>Femenino</MenuItem>
+                                <MenuItem value={3}>Otro</MenuItem>
+                            </Select>
+                    </FormControl>
+
+                    <TextField
+                        label="Nombre(s)*"
+                        variant="standard"
+                        onChange={changeNombreSecundario}
+                        value={nombreInicialSecundario}
+                        InputProps={{
+                            disableUnderline: true, // Elimina la línea inferior
+                            sx: {
+                                border: '1px solid', // Añade un borde alrededor
+                                borderColor: 'rgba(0, 0, 0, 0.527)', // Color del borde inicial
+                                borderRadius: '4px', // Bordes redondeados
+                                padding: '9px 9px', // Ajusta el padding del input
+                                '&:hover': {
+                                    borderColor: 'rgb(9, 197, 9)', // Color del borde al hacer hover
+                                },
+                                '&.Mui-focused': {
+                                    border: '2px solid rgb(9, 197, 9)',
+                                    borderColor: 'rgb(9, 197, 9)', // Color del borde al hacer focus
+                                    color: 'black',
+                                    fontWeight: 'bold',
+                                },
+
+                            },
+                        }}
+                        InputLabelProps={{
+                            sx: {
+                                fontSize: '15px',
+                                transform: 'translate(18px, 30px) scale(1.1)', // Posición inicial del label
+                                color: 'black', // Color del label
+                                '&.Mui-focused': {
+                                    marginBottom: '5px',
+                                    transform: 'translate(14px, 20px) scale(0.85)', // Mantiene el label dentro del borde al enfocar
+                                    color: 'YellowGreen', // Cambia el color del label cuando está enfocado
+                                    fontWeight: 'bold'
+                                },
+                                // Mantiene el label en la posición escalada si hay texto
+                                '&.MuiFormLabel-filled': {
+                                    transform: 'translate(14px, 20px) scale(0.85)', // Mantiene el label arriba si hay texto
+                                    color: 'YellowGreen', // Color cuando está lleno
+                                },
+                                '&:not(.Mui-focused)': {
+                                    color: 'black', // Texto en negro cuando no está enfocado
+
+                                },
+                            },
+                        }}
+
+                        sx={{
+                            width: '440px',
+                            marginRight: '15px',
+                            '&.Mui-focused .MuiInputBase-input': {
+                                color: 'black', // Texto en negro cuando se pierde el foco
+                                fontWeight: 'bold',
+                            },
+                            '&.Mui-filled .MuiInputBase-input': {
+                                fontWeight: 'bold', // Texto en negrita cuando hay contenido
+                                color: 'black', // Texto en negro
+                            },
+                            '&:not(.Mui-focused) .MuiInputBase-input': {
+                                color: 'black', // Texto en negro cuando no está enfocado
+                                fontWeight: 'bold',
+                            },
+                        }}
+                    />
+
+                </div>
+
+
+                <TextField
+                    label="Apellido"
+                    variant="standard"
+                    onChange={changeApellidoSecundario}
+                    value={apellidoInicialSecundario}
+                    InputProps={{
+                        disableUnderline: true, // Elimina la línea inferior
+                        sx: {
+                            fontSize: '15px',
+                            border: '1px solid', // Añade un borde alrededor
+                            borderColor: 'rgba(0, 0, 0, 0.527)', // Color del borde inicial
+                            borderRadius: '4px', // Bordes redondeados
+                            padding: '9px 9px', // Ajusta el padding del input
+                            '&:hover': {
+                                borderColor: 'rgb(9, 197, 9)', // Color del borde al hacer hover
+                            },
+                            '&.Mui-focused': {
+                                border: '2px solid rgb(9, 197, 9)',
+                                borderColor: 'rgb(9, 197, 9)', // Color del borde al hacer focus
+                                color: 'black',
+                                fontWeight: 'bold',
+                            },
+
+                        },
+                    }}
+                    InputLabelProps={{
+                        sx: {
+                            fontSize: '15px',
+                            transform: 'translate(18px, 30px) scale(1.1)', // Posición inicial del label
+                            color: 'black', // Color del label
+                            '&.Mui-focused': {
+                                marginBottom: '5px',
+                                transform: 'translate(14px, 20px) scale(0.85)', // Mantiene el label dentro del borde al enfocar
+                                color: 'YellowGreen', // Cambia el color del label cuando está enfocado
+                                fontWeight: 'bold'
+                            },
+                            // Mantiene el label en la posición escalada si hay texto
+                            '&.MuiFormLabel-filled': {
+                                transform: 'translate(14px, 20px) scale(0.85)', // Mantiene el label arriba si hay texto
+                                color: 'YellowGreen', // Color cuando está lleno
+                            },
+                            '&:not(.Mui-focused)': {
+                                color: 'black', // Texto en negro cuando no está enfocado
+
+                            },
+                        },
+                    }}
+
+                    sx={{
+                        width: '100%',
+                        '&.Mui-focused .MuiInputBase-input': {
+                            color: 'black', // Texto en negro cuando se pierde el foco
+                            fontWeight: 'bold',
+                        },
+                        '&.Mui-filled .MuiInputBase-input': {
+                            fontWeight: 'bold', // Texto en negrita cuando hay contenido
+                            color: 'black', // Texto en negro
+                        },
+                        '&:not(.Mui-focused) .MuiInputBase-input': {
+                            color: 'black', // Texto en negro cuando no está enfocado
+                            fontWeight: 'bold',
+                        },
+                    }}
+                />
+
+                <div style={{ display: 'flex' }}>
+                    <div style={{ display: 'flex', border: '1px solid gray', width: '100%', height: '60px', marginTop: '20px', borderRadius: '10px' }}>
+                        <FormControl sx={{ m: 1, width: '100%' }}>
+
+
+                            <Select
+                                labelId="demo-select-small-label"
+                                id="demo-select-small"
+                                value={diaSecundario}
+                                size="small"
+                                onChange={changeDiaSecundario}
+                                MenuProps={{
+                                    disableScrollLock: true, // Permite que el scroll de la página continúe
+                                    PaperProps: {
+                                        sx: {
+                                            maxHeight: 200,
+                                            overflow: 'auto',
+                                        },
+                                    },
+                                }}
+
+                                sx={{
+                                    width: '100%',
+                                    fontSize: '16px'
+
+                                }}
+                            >
+                                <MenuItem value="Dia" disabled sx={{ visibility: 'hidden', height: '0px' }}>
+                                    Dia
+                                </MenuItem>
+                                {dias.map((dia) => (
+                                    <MenuItem value={dia}>{dia}</MenuItem>
+                                ))}
+
+
+                            </Select>
+
+                        </FormControl>
+
+                        <FormControl sx={{ m: 1, width: '100%' }}>
+
+
+                            <Select
+                                labelId="demo-select-small-label"
+                                id="demo-select-small"
+                                value={mesSecundario}
+                                size="small"
+                                onChange={changeMesSecundario}
+                                MenuProps={{
+                                    disableScrollLock: true, // Permite que el scroll de la página continúe
+                                    PaperProps: {
+                                        sx: {
+                                            maxHeight: 100,
+                                            overflow: 'auto',
+                                        },
+                                    },
+                                }}
+                                sx={{
+                                    width: '100%',
+                                    fontSize: '16px',
+                                    marginRight: '2px',
+
+                                }}
+                            >
+                                <MenuItem value="Mes" disabled sx={{ visibility: 'hidden', height: '0px' }}>
+                                    Mes
+                                </MenuItem>
+                                {meses.map((mes) => (
+                                    <MenuItem value={mes}>{mes}</MenuItem>
+                                ))}
+                            </Select>
+
+
+                        </FormControl>
+
+                        <FormControl sx={{ m: 1, width: '100%' }}>
+
+                            <Select
+                                labelId="demo-select-small-label"
+                                id="demo-select-small"
+                                value={anualSecundario}
+                                size="small"
+                                onChange={changeAnualSecundario}
+                                MenuProps={{
+                                    disableScrollLock: true, // Permite que el scroll de la página continúe
+                                    PaperProps: {
+                                        sx: {
+                                            maxHeight: 200,
+                                            overflow: 'auto',
+                                        },
+                                    },
+                                }}
+
+                                sx={{
+                                    width: '100%',
+                                    fontSize: '16px'
+
+                                }}
+                            >
+                                <MenuItem value="Año" disabled sx={{ visibility: 'hidden', height: '0px' }}>
+                                    Año
+                                </MenuItem>
+                                {años.map((año) => (
+                                    <MenuItem value={año}>{año}</MenuItem>
+                                ))}
+                            </Select>
+
+
+                        </FormControl>
+                    </div>
+                </div>
+
+                <FormControl variant="standard" style={{ width: '100%' }}>
+                    <InputLabel
+                        id="select-label"
+                        sx={{
+                            fontSize:'15px',
+                            transform: nacionalidadSecundario ? 'translate(14px, 20px) scale(0.85)' : 'translate(18px, 30px) scale(1.1)',
+                            color: nacionalidadSecundario ? 'YellowGreen' : 'black',
+                            fontWeight: nacionalidadSecundario ? 'bold' : 'normal',
+                            '&.Mui-focused': {
+                                marginBottom: '5px',
+                                transform: 'translate(14px, 20px) scale(0.85)',
+                                color: 'YellowGreen',
+                                fontWeight: 'bold',
+                            },
+                            '&:not(.Mui-focused)': {
+                                color: 'black', // Texto en negro cuando no está enfocado
+                                fontWeight: 'normal',
+
+                            },
+                        }}
+                    >
+                        Nacionalidad*
+                    </InputLabel>
+                    <Select
+                        labelId="select-label"
+                        id="demo-simple-select"
+                        value={nacionalidadSecundario}
+                        onChange={changeNacionalidadSecundario}
+
+                        disableUnderline
+
+                        MenuProps={{
+                            disableScrollLock: true, // Permite que el scroll de la página continúe
+                            PaperProps: {
+                                sx: {
+                                    maxHeight: 100,
+                                    overflow: 'auto',
+                                },
+                            },
+                        }}
+
+                        sx={{
+                            fontSize: '15px',
+                            width: '100%',
+                            border: '1px solid rgba(0, 0, 0, 0.527)', // Color del borde inicial
+                            borderRadius: '4px', // Bordes redondeados
+                            padding: '5px 5px', // Ajusta el padding del select
+                            '&:hover': {
+                                borderColor: 'rgb(9, 197, 9)', // Color del borde al hacer hover
+                            },
+                            '&.Mui-focused': {
+                                borderColor: 'rgb(9, 197, 9)', // Color del borde al hacer focus
+                                color: 'black',
+                                fontWeight: 'bold',
+                            },
+                            '& .MuiSelect-select': {
+                                padding: '12px', // Ajusta el padding del select
+                                fontWeight: 'bold', // Texto en negrita cuando hay contenido
+                                color: 'black', // Texto en negro cuando tiene contenido
+                            },
+                        }}
+                    >
+
+                        {codigosPaises.map((pais, index) => (
+                            <MenuItem key={index} value={`${pais.nombre}`}
+
+                                sx={{
+                                    '&:hover': {
+                                        color: 'black', // Cambiar el color de la letra al pasar el cursor
+                                    }
+                                }}
+
+                            >
+                                {`${pais.nombre}`}
+                            </MenuItem>
+                        ))}
+                    </Select>
+                </FormControl>
+
+            </div>
+
+        </div>
+            )}
 
             <div className="textoReserva" >
                 <label className='label_pasajero' >Titular de la reserva</label><br />

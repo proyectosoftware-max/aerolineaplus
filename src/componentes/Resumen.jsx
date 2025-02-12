@@ -29,9 +29,9 @@ dayjs.locale('es');
 const Resumen = () => {
   const { sharedData } = useContext(DataContext);
   const [selectedDate, setSelectedDate] = useState(new Date()); // Fecha seleccionada
-  const { setSharedData, fecha, setFecha, origen, setSalida, setLlegada, destino, setPrecio, setColorBoton } = useContext(DataContext);
+  const { setSharedData, fecha, setFecha, origen, setSalida, setLlegada, destino, setPrecio, setColorBoton, contarAdulto, setContarAdulto, adulto, setAdulto, pasajero, setPasajero } = useContext(DataContext);
   const [open, setOpen] = React.useState(false);
-  const { ida, vuelta, tiempo, precio, salida, llegada, colorboton } = useParams();
+  const { ida, vuelta, tiempo, precio, salida, llegada, colorboton, contaradulto, adultopasajero } = useParams();
   const navigate = useNavigate();
 
   const handleClose = () => {
@@ -77,8 +77,20 @@ const Resumen = () => {
     localStorage.setItem('colorboton', setColorBoton(colorboton));
   }, [colorboton]);
 
+  useEffect(() => {
+    localStorage.setItem('contarAdulto', setContarAdulto(contaradulto));
+  }, [contaradulto]);
+
+  useEffect(() => {
+    localStorage.setItem('adulto', setAdulto(adultopasajero));
+  }, [adultopasajero]);
+
+  useEffect(() => {
+    localStorage.setItem('pasajero', setPasajero(adultopasajero));
+  }, [adultopasajero]);
+
   const Paso2 = () => {
-    navigate(`/paso2/${origen}/${destino}/${ida}/${vuelta}/${tiempo}/${precio}/${salida}/${llegada}/${colorboton}`);
+    navigate(`/paso2/${origen}/${destino}/${ida}/${vuelta}/${tiempo}/${precio}/${salida}/${llegada}/${colorboton}/${contarAdulto}/${adultopasajero}`);
   }
 
   return (

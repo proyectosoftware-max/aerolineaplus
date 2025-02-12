@@ -80,7 +80,7 @@ const MenuNavBarPaso1 = () => {
   const [ciudadOrigen, setCiudadOrigen] = useState("Barranquilla");
   const [ciudadDestino, setCiudadDestino] = useState("Medellín");
   const [scrolled, setScrolled] = useState(false);
-  const { sharedData, fecha, setFecha, salida, llegada, setSalida, setLlegada, origen, destino, setOrigen, setDestino, precio, colorboton, setColorBoton } = useContext(DataContext);
+  const { sharedData, fecha, setFecha, salida, llegada, setSalida, setLlegada, origen, destino, setOrigen, setDestino, precio, colorboton, setColorBoton, contarAdulto, setContarAdulto, adulto, setAdulto, pasajero, setPasajero } = useContext(DataContext);
   const [open, setOpen] = useState(false);
   const [expanded, setExpanded] = useState(false); // Control del estado de la flecha
   const [abrirModal, setAbrirModal] = useState(false);
@@ -392,10 +392,21 @@ const MenuNavBarPaso1 = () => {
   };
 
   const incrementoA = () => {
+
+    if(contarA < 2){
     setContarA(preconteo => preconteo + 1);
-    setSumacontar(preconteo => preconteo + 1);
+    /*setSumacontar(preconteo => preconteo + 1);*/
+    }
   }
 
+  const decrementoA = () => {
+    if (contarA > 1) {
+      setContarA(preconteo => preconteo - 1);
+
+    }
+  }
+
+  /*
   const incrementoJ = () => {
     setContarJ(preconteo => preconteo + 1);
     setSumacontar(preconteo => preconteo + 1);
@@ -413,12 +424,6 @@ const MenuNavBarPaso1 = () => {
   }
 
 
-  const decrementoA = () => {
-    if (contarA > 0) {
-      setContarA(preconteo => preconteo - 1);
-      setSumacontar(preconteo => preconteo - 1);
-    }
-  }
 
   const decrementoJ = () => {
     if (contarJ > 0) {
@@ -440,12 +445,15 @@ const MenuNavBarPaso1 = () => {
       setContarB(preconteo => preconteo - 1);
       setSumacontar(preconteo => preconteo - 1);
     }
-  }
+  } */
 
-  const clickConfirmarContar = () => {
-    setConfirmarContar(sumacontar);
-    setAbrirAdulto(false);
-  }
+    const clickConfirmarContar = (key) => {
+      setActiveKey(activeKey === key ? null : key);
+      setConfirmarContar(contarA);
+      setContarAdulto(contarA);
+      setAbrirAdulto(false);
+    }
+  
 
   const Buscar = () => {
     setCiudadOrigen(query1);
@@ -491,6 +499,18 @@ const MenuNavBarPaso1 = () => {
     localStorage.setItem('colorboton', setColorBoton(colorboton));
   }, [colorboton]);
 
+  useEffect(() => {
+    localStorage.setItem('contarAdulto', setContarAdulto(contarAdulto));
+  }, [contarAdulto]);
+
+  useEffect(() => {
+    localStorage.setItem('adulto', setAdulto(adulto));
+  }, [adulto]);
+
+  useEffect(() => {
+    localStorage.setItem('pasajero', setPasajero(pasajero));
+  }, [pasajero]);
+
   const clickEditarAtras = () =>{
     navigate('/');
   }
@@ -518,7 +538,7 @@ const MenuNavBarPaso1 = () => {
                 <div className="nav2" >
                   <Nav>
                     <Navbar.Text className='fecha'><FlightTakeoffIcon sx={{ fontSize: '16px' }} /><label style={{ marginLeft: '5px' }}>{dayjs(fecha).format('D\nMMMM\nYYYY')}</label></Navbar.Text>
-                    <Navbar.Text className='adulto' ><GroupAddIcon sx={{ fontSize: '16px' }} /><label style={{ marginLeft: '5px' }}>1 Adulto</label></Navbar.Text>
+                    <Navbar.Text className='adulto' ><GroupAddIcon sx={{ fontSize: '16px' }} /><label style={{ marginLeft: '5px' }}>{contarAdulto} {adulto}</label></Navbar.Text>
                     <Nav.Link className='letra_editar' onClick={clickEditarAtras}><EditIcon sx={{ fontSize: '16px', color: 'rgb(90, 142, 155)' }} /><label style={{ marginLeft: '5px', textDecoration: 'underline', cursor: 'pointer' }}>Editar</label></Nav.Link>
                   </Nav>
                 </div>
@@ -530,7 +550,7 @@ const MenuNavBarPaso1 = () => {
             <Navbar.Collapse id="bascic navbar-nav">
               <Nav className='flex-column'>
                 <div className='pasos' >
-                  <Navbar.Text>Paso 1 de 5</Navbar.Text>
+                  <Navbar.Text>Paso 1 de 5 {adulto}</Navbar.Text>
                 </div>
                 <div className="barra" >
                   <ProgressBar now={20} className='BarraProgreso' style={{ height: '10px' }} />
@@ -596,7 +616,7 @@ const MenuNavBarPaso1 = () => {
                 <div className="nav2" >
                   <Nav>
                     <Navbar.Text className='fecha'><FlightTakeoffIcon sx={{ fontSize: '16px' }} /><label style={{ marginLeft: '5px' }}>{dayjs(fecha).format('D\nMMMM\nYYYY')}</label></Navbar.Text>
-                    <Navbar.Text className='adulto' ><GroupAddIcon sx={{ fontSize: '16px' }} /><label style={{ marginLeft: '5px' }}>1 Adulto</label></Navbar.Text>
+                    <Navbar.Text className='adulto' ><GroupAddIcon sx={{ fontSize: '16px' }} /><label style={{ marginLeft: '5px' }}>{contarAdulto} {adulto}</label></Navbar.Text>
                     <Nav.Link className='letra_editar' onClick={clickEditarAtras}><EditIcon sx={{ fontSize: '16px', color: 'rgb(90, 142, 155)' }} /><label style={{ marginLeft: '5px', textDecoration: 'underline', cursor: 'pointer' }}>Editar</label></Nav.Link>
                   </Nav>
                 </div>
@@ -667,7 +687,7 @@ const MenuNavBarPaso1 = () => {
           </label>
           <div className='div_precioMovil' >
             <div className='div_contenidoPrecioMovil'>
-            <ShoppingCartIcon sx={{ fontSize: '16px', marginTop: '-9px', color:'white' }} /><label className='label_copMovil' >COP </label> <label className='label_cero'>{precio}</label></div>
+            <ShoppingCartIcon sx={{ fontSize: '16px', marginTop: '-9px', color:'white' }} /><label className='label_copMovil' >COP </label> <label className='label_ceroMovil'>{precio}</label></div>
             </div>
         </div>
         
@@ -675,7 +695,7 @@ const MenuNavBarPaso1 = () => {
           <p className='p_idaMenuBar'><FlightTakeoffIcon className='avion' sx={{ fontSize: '25px' }} /><label className='letra_ida' style={{ marginLeft: '5px' }}>Ida:</label> {origen} <label style={{ marginLeft: '5px', marginRight: '8px' }}>a</label>{destino}</p>
           <div className='div_movil'>
             <div className='fecha'><FlightTakeoffIcon sx={{ fontSize: '15px' }} /><label style={{ marginLeft: '5px' }}>{dayjs(fecha).format('D\nMMMM\nYYYY')}</label></div>
-            <div className='adulto' ><GroupAddIcon sx={{ fontSize: '15px' }} /><label style={{ marginLeft: '5px' }}>1 Pasajero</label></div>
+            <div className='adulto' ><GroupAddIcon sx={{ fontSize: '15px' }} /><label style={{ marginLeft: '5px' }}>{contarAdulto} {pasajero}</label></div>
           </div>
           <div className='letra_editar' ><EditIcon sx={{ fontSize: '14px', marginTop: '-5px', color: 'white' }} onClick={clickEditarAtras} /></div>
         </div>
@@ -748,7 +768,7 @@ const MenuNavBarPaso1 = () => {
             <div style={{ marginTop: '5px', marginLeft: '5px', marginRight: '5px' }}><img src={barraMediana} /></div>
             <div style={{ fontSize: '22px', fontWeight: 'bold' }}>{llegada}</div>
           </div>
-          <p style={{ marginTop: '30px' }}>1 Adulto</p>
+          <p style={{ marginTop: '30px' }}>{contarAdulto} {adulto}</p>
           <div style={{ display: 'flex', marginTop: '50px' }}>
             <div style={{ fontFamily: 'revert', fontSize: '22px', fontWeight: 'bold', marginRight: '130px' }}>Total a pagar</div>
             <div style={{ fontSize: '22px', fontWeight: 'bold' }}><label style={{ marginRight: '5px' }}>COP</label>{precio}</div>
@@ -1000,16 +1020,20 @@ const MenuNavBarPaso1 = () => {
                   >
                     <Card className="custom-card">
                       <Card.Header className='CardHeader'>
-                        <div className="accordion-header">
-                          <h5>{confirmarContar}</h5>
+                      <div className="accordion-header">
+                          <div style={{marginTop: '10px',zIndex:'1', fontSize: '19px', color: 'black', display:'flex'}}>
+                          <PersonAddAlt1Icon sx={{ fontSize: '19px', color: 'black' }} />
+                          <h5 style={{marginLeft:'10px', marginRight:'40px'}}>{contarA}</h5>
                           <button
+                           
                             onClick={() => toggleAccordion('0')}
                             aria-expanded={activeKey === '0'}
                             className={`toggle-button ${activeKey === '0' ? 'rotate' : ''}`}
-
+                            
                           >
                             <FaChevronDown />
                           </button>
+                          </div>
                         </div>
                       </Card.Header>
 
@@ -1061,6 +1085,7 @@ const MenuNavBarPaso1 = () => {
                         <td className='numeros'>{contarA}</td>
                         <td ><button className='boton_mas' onClick={incrementoA}>+</button></td>
                       </tr>
+                      {/*
                       <tr >
                         <td >
                           <p className='p1'>Jóvenes</p>
@@ -1089,9 +1114,9 @@ const MenuNavBarPaso1 = () => {
                         <td ><button className='boton_menos' onClick={decrementoB}>-</button></td>
                         <td className='numeros'>{contarB}</td>
                         <td ><button className='boton_mas' onClick={incrementoB}>+</button></td>
-                      </tr>
+                      </tr>*/}
                       <tr>
-                        <td colSpan={4}><button className='boton_confirmar' onClick={() => confirmarContar()} >Confirmar</button></td>
+                        <td colSpan={4}><button className='boton_confirmar' onClick={() => clickConfirmarContar('1')} >Confirmar</button></td>
                       </tr>
 
                     </tbody>
@@ -1927,11 +1952,12 @@ const MenuNavBarPaso1 = () => {
                   <td className='numeros'>{contarA}</td>
                   <td ><button className='boton_mas' onClick={incrementoA}>+</button></td>
                 </tr>
+                   {/*
                 <tr >
-                  <td >
+                  <td>
                     <p className='p1'>Jóvenes</p>
-                    <p className='p2'>De 12 a 14 años</p></td>
-
+                    <p className='p2'>De 12 a 14 años</p>
+                    </td>
                   <td ><button className='boton_menos' onClick={decrementoJ}>-</button></td>
                   <td className='numeros'>{contarJ}</td>
                   <td><button className='boton_mas' onClick={incrementoJ}>+</button></td>
@@ -1955,9 +1981,9 @@ const MenuNavBarPaso1 = () => {
                   <td ><button className='boton_menos' onClick={decrementoB}>-</button></td>
                   <td className='numeros'>{contarB}</td>
                   <td ><button className='boton_mas' onClick={incrementoB}>+</button></td>
-                </tr>
+                </tr>*/}
                 <tr>
-                  <td colSpan={4}><button className='boton_confirmar' onClick={() => clickConfirmarContar()} >Confirmar</button></td>
+                  <td colSpan={4}><button className='boton_confirmar' onClick={() => clickConfirmarContar('1')} >Confirmar</button></td>
                 </tr>
 
               </tbody>

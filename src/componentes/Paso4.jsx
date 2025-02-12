@@ -7,8 +7,8 @@ import PiePagina from './PiePagina';
 
 const Paso4 = () => {
 
-    const { setSharedData, selectedDate, fecha, setFecha, origen, setSalida, setLlegada, destino, setPrecio, setColorBoton } = useContext(DataContext);
-    const { ida, vuelta, precio, salida, llegada, tiempo, nombre, apellido, colorboton } = useParams();
+    const { setSharedData, selectedDate, fecha, setFecha, origen, setSalida, setLlegada, destino, setPrecio, setColorBoton, setContarAdulto, adulto, setAdulto, pasajero, setPasajero } = useContext(DataContext);
+    const { ida, vuelta, precio, salida, llegada, tiempo, nombre, apellido, colorboton, contaradulto, adultopasajero } = useParams();
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -31,8 +31,20 @@ const Paso4 = () => {
         localStorage.setItem('colorboton', setColorBoton(colorboton));
       }, [colorboton]);
 
+      useEffect(() => {
+        localStorage.setItem('contarAdulto', setContarAdulto(contaradulto));
+      }, [contaradulto]);
+
+      useEffect(() => {
+        localStorage.setItem('adulto', setAdulto(adultopasajero));
+      }, [adultopasajero]);
+
+      useEffect(() => {
+        localStorage.setItem('pasajero', setPasajero(adultopasajero));
+      }, [adultopasajero]);
+
     const enviar = () => {
-        navigate(`/paso5/${origen}/${destino}/${ida}/${vuelta}/${tiempo}/${precio}/${salida}/${llegada}/${nombre}/${apellido}/${colorboton}`);
+        navigate(`/paso5/${origen}/${destino}/${ida}/${vuelta}/${tiempo}/${precio}/${salida}/${llegada}/${nombre}/${apellido}/${colorboton}/${contaradulto}/${adultopasajero}`);
     }
 
     return (

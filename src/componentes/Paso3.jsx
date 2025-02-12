@@ -110,8 +110,8 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   });
 
 const Paso3 = () => {
-    const { setSharedData, selectedDate, fecha, setFecha, origen, setSalida, setLlegada, destino, setPrecio, setColorBoton } = useContext(DataContext);
-    const { ida, vuelta, precio, salida, llegada, tiempo, nombre, apellido, colorboton } = useParams();
+    const { setSharedData, selectedDate, fecha, setFecha, origen, setSalida, setLlegada, destino, setPrecio, setColorBoton, setContarAdulto, adulto, setAdulto, pasajero, setPasajero } = useContext(DataContext);
+    const { ida, vuelta, precio, salida, llegada, tiempo, nombre, apellido, colorboton, contaradulto, adultopasajero } = useParams();
     const [value, setValue] = useState(0);
     const [age, setAge] = useState('');
     const [open, setOpen] = useState(false);
@@ -139,8 +139,20 @@ const Paso3 = () => {
         localStorage.setItem('colorboton', setColorBoton(colorboton));
       }, [colorboton]);
 
+      useEffect(() => {
+        localStorage.setItem('contarAdulto', setContarAdulto(contaradulto));
+      }, [contaradulto]);
+
+      useEffect(() => {
+        localStorage.setItem('adulto', setAdulto(adultopasajero));
+      }, [adultopasajero]);
+
+      useEffect(() => {
+        localStorage.setItem('pasajero', setPasajero(adultopasajero));
+      }, [adultopasajero]);
+
     const enviar = () => {
-        navigate(`/paso4/${origen}/${destino}/${ida}/${vuelta}/${tiempo}/${precio}/${salida}/${llegada}/${nombre}/${apellido}/${colorboton}`);
+        navigate(`/paso4/${origen}/${destino}/${ida}/${vuelta}/${tiempo}/${precio}/${salida}/${llegada}/${nombre}/${apellido}/${colorboton}/${contaradulto}/${adultopasajero}`);
     }
 
     const handleChange = (event, newValue) => {
@@ -403,7 +415,7 @@ const Paso3 = () => {
             <div style={{ marginTop: '5px', marginLeft: '5px', marginRight: '5px' }}><img style={{width:'100%'}} src={barraMediana} /></div>
             <div style={{ fontSize: '20px', fontWeight: 'bold' }}>{llegada}</div>
           </div>
-          <p style={{ marginTop: '30px' }}>1 Adulto</p>
+          <p style={{ marginTop: '30px' }}>{contaradulto} {adulto}</p>
           <div style={{ display: 'flex', marginTop: '50px' }}>
             <div style={{ fontFamily: 'revert', fontSize: '20px', fontWeight: 'bold', marginRight: '50px' }}>Total a pagar</div>
             <div style={{ fontSize: '20px', fontWeight: 'bold' }}><label style={{ marginRight: '5px' }}>COP</label>{precio}</div>
