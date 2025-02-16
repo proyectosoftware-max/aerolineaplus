@@ -129,6 +129,28 @@
     font-weight: bold;
 }
 
+.modalPiePagina{
+    margin-top: 100px !important;
+    border-radius: 5px;
+}
+
+.tituloModalPiePagina{
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+.modalBodyPiePagina{
+    width: 70%;
+   margin: 0 auto;
+   
+}
+
+
 .div_piePagina {
     margin-top: 70px;
     margin-bottom: 120px;
@@ -140,6 +162,7 @@
 .label_piePagina1 {
     float: left;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .label_piePagina2 {
@@ -248,6 +271,28 @@
 
     .p_idaMovil{
         display: none;
+    }
+
+
+    .modalPiePagina{
+        margin-top: 1px !important;
+        border-radius: 5px;
+    }
+    
+    .tituloModalPiePagina{
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+        border: 1px solid red;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .modalBodyPiePagina{
+        width: 70%;
+       margin: 0 auto;
+       
     }
    
 }
@@ -732,6 +777,47 @@
         position: relative;
         padding-left: 0px;
 
+    }
+
+    .modalPiePagina{
+        margin-top: 100px;
+    }
+    
+    .tituloModalPiePagina{
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+        border: 1px solid red;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .modalBodyPiePagina{
+        width: 70%;
+       margin: 0 auto;
+       
+    }
+
+    .modalPiePagina{
+        margin-top: 1px !important;
+        border-radius: 5px;
+    }
+    
+    .tituloModalPiePagina{
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+        border: 1px solid red;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .modalBodyPiePagina{
+        width: 70%;
+       margin: 0 auto;
+       
     }
 
     .div_piePagina {
