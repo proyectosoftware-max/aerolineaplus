@@ -319,6 +319,10 @@
     display: none;
 }
 
+.SegundoFormMovil{
+    display: none;
+}
+
 @media screen and (max-width: '1024px') {
 
 
@@ -416,6 +420,11 @@
     .PrimerFormMovil{
         display: block;
     }
+
+    .SegundoFormMovil{
+        display: block;
+    }
+
     .div_reserva{
         display: none;
     }
