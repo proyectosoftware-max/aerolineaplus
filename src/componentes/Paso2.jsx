@@ -379,7 +379,10 @@ const Pasos2 = () => {
 
         if (!nombreInicial.trim() || !apellidoInicial.trim() || !genero || !dia || !mes || !anual || !nacionalidad || !prefijo || !telefono.trim() || !correo.trim()) {
             alert('Debe completar todos los campos');
-        } else {
+        }else if (!checkAceptar || !checkRecibir) { 
+            alert('Debes aceptar ambas condiciones antes de continuar');
+        } 
+        else {
             navigate(`/paso3/${origen}/${destino}/${ida}/${vuelta}/${tiempo}/${precio}/${salida}/${llegada}/${nombreInicial}/${apellidoInicial}/${colorboton}/${contaradulto}/${adultopasajero}`);
         }
 
